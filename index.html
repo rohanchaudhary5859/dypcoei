@@ -106,7 +106,7 @@
                             <a href="team.html" class="dropdown-item">National Digital Library</a>
                             <a href="testimonial.html" class="dropdown-item">E-PG Pathshala</a>
                             <a href="testimonial.html" class="dropdown-item">Aptitude Questions</a>
-                            <a href="detail.html" class="dropdown-item">Jobs Links</a> <!-- Simplified by removing nesting -->
+                            <a href="detail.html" class="dropdown-item">Jobs Links</a>
                         </div>
                     </div>
     
@@ -117,7 +117,7 @@
                             <a href="feature.html" class="dropdown-item">Our Features</a>
                             <a href="team.html" class="dropdown-item">NCTEP19</a>
                             <a href="testimonial.html" class="dropdown-item">College Magazine</a>
-                            <a href="detail.html" class="dropdown-item">BE Project</a> <!-- Simplified by removing nesting -->
+                            <a href="detail.html" class="dropdown-item">BE Project</a>
                         </div>
                     </div>
     
@@ -133,33 +133,121 @@
         </nav>
     </div>
     
+    <script>
+        $(document).ready(function() {
+            $(document).click(function(event) {
+                var clickover = $(event.target);
+                var _opened = $("#navbarCollapse").hasClass("show");
+                if (_opened && !clickover.closest('.navbar').length) {
+                    $("#navbarCollapse").collapse('hide');
+                }
+            });
+    
+            // Ensure the navbar toggles correctly when tapping on the toggler button
+            $(".navbar-toggler").click(function() {
+                var _opened = $("#navbarCollapse").hasClass("show");
+                if (_opened) {
+                    $("#navbarCollapse").collapse('hide');
+                } else {
+                    $("#navbarCollapse").collapse('show');
+                }
+            });
+        });
+    </script>
+    
     <!-- Navbar End -->
 
-
-    <!-- Header Start -->
-    <div class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px;">
-        <div class="container text-center my-5 py-5">
-            <h1 class="text-white mt-4 mb-4">Learn From Home</h1>
-            <h1 class="text-white display-1 mb-5">Education Courses</h1>
-            <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Courses</button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Courses 1</a>
-                            <a class="dropdown-item" href="#">Courses 2</a>
-                            <a class="dropdown-item" href="#">Courses 3</a>
-                        </div>
-                    </div>
-                    <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
-                    <div class="input-group-append">
-                        <button class="btn btn-secondary px-4 px-lg-5">Search</button>
-                    </div>
-                </div>
+    <style>
+        .hero-section {
+            position: relative;
+            height: 110vh;
+            overflow: hidden;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    
+        /* Background Slider */
+        .background-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            display: flex;
+            flex-direction: row;
+            transition: transform 0.8s ease-in-out;
+        }
+    
+        .slide {
+            flex: 0 0 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center center;
+        }
+    
+        /* Media Queries */
+        @media (max-width: 1200px) {
+            .slide {
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            .slide {
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    
+        @media (max-width: 490px) {
+            .hero-section {
+                height: 25vh; /* Slightly reduce height for smaller screens */
+                justify-content: flex-start; /* Align content to the top */
+                padding-top: 10px; /* Adjust the top padding */
+            }
+            .slide {
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <!-- Header Start -->
+        <div class="hero-section position-relative overlay-bottom custom-slide" style="margin-bottom: 100px;">
+            <div class="background-slider" id="backgroundSlider">
+                <div class="slide" style="background-image: url('Faculty-of-FE-With-Principal-Head-of-FE.png');"></div>
+                <div class="slide" style="background-image: url('DYPCOEI-About-Us-1024x419.jpg');"></div>
+                <div class="slide" style="background-image: url('Principal-Suresh-Mali-Engineering.png');"></div>
+                <div class="slide" style="background-image: url('Anuja-Patilt.png');"></div>
+                <div class="slide" style="background-image: url('FE-Faculty-With-Students.png');"></div>
+                <div class="slide" style="background-image: url('library-coe.png');"></div>
             </div>
         </div>
-    </div>
+    
+        <script>
+            const slides = document.querySelectorAll('.slide');
+            const slider = document.getElementById('backgroundSlider');
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+    
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }
+    
+            setInterval(nextSlide, 4000); // Change slide every 4 seconds
+        </script>
+    </body>
+    </html>
+    
     <!-- Header End -->
 
 
