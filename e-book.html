@@ -92,9 +92,9 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">E Database</a>
                         <div class="dropdown-menu m-0">
-                            <a href="detail.html" class="dropdown-item">EBSCO</a>
-                            <a href="feature.html" class="dropdown-item">E-Books</a>
-                            <a href="team.html" class="dropdown-item">E-Journals</a>
+                            <a href="https://web.s.ebscohost.com/ehost/search/basic?vid=0&sid=421b9c19-dd06-4bdd-988b-e0710e25c372%40redis" class="dropdown-item">EBSCO</a>
+                            <a href="e-book.html" class="dropdown-item">E-Books</a>
+                            <a href="E-Journals.html" class="dropdown-item">E-Journals</a>
                             <a href="testimonial.html" class="dropdown-item">DELNET</a>
                         </div>
                     </div>
@@ -135,143 +135,146 @@
             </div>
         </nav>
     </div>
-    
-    
-    <!-- Navbar End -->
-
     <style>
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
 
-.library-collection {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff; /* White background */
-    color: #000000; /* Black text for main content */
-}
+        table {
+            width: 100%;
+            max-width: 85%;
+            margin: 20px auto;
+            border-collapse: collapse; /* Remove space between cells */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow around the table */
+        }
 
-.header {
-    padding: 20px;
-    border-bottom: 2px solid #007BFF; /* Blue underline for visual separation */
-}
+        th, td {
+            border: 1px solid #ccc; /* Cell borders */
+            padding: 10px; /* Cell padding */
+            text-align: left; /* Text alignment */
+        }
 
-.header h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #007BFF; /* Blue text for the main title */
-}
+        th {
+            background-color: #eee; /* Header background color */
+            color: #000000; /* Header text color */
+        }
 
-.summary {
-    margin: 20px 0;
-    font-size: 1.2em;
-    color: #007BFF; /* Blue color for the summary text */
-    font-weight: bold;
-}
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Zebra effect for even rows */
+        }
 
-.table-container {
-    margin: 20px auto;
-    width: 90%;
-    max-width: 800px;
-    background-color: #ffffff; /* White background for the table */
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a boxed effect */
-    border: 1px solid #dddddd; /* Light grey border for the box */
-}
+        a {
+            color: #3498db; /* Link color */
+            text-decoration: none; /* No underline */
+        }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-}
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
 
-th, td {
-    padding: 10px;
-    border-bottom: 1px solid #dddddd;
-}
+        @media (max-width: 768px) {
+            table {
+                font-size: 14px; /* Adjust font size for smaller screens */
+            }
 
-th {
-    background-color: #007BFF; /* Blue background for table headers */
-    color: #ffffff; /* White text for table headers */
-}
+            th, td {
+                padding: 8px; /* Reduce padding */
+            }
+        }
 
-td {
-    color: #000000; /* Black text for table content */
-}
+        @media (max-width: 490px) {
+            table {
+                font-size: 12px; /* Further adjust font size for even smaller screens */
+            }
 
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 2em;
-    }
+            th, td {
+                padding: 6px; /* Further reduce padding */
+            }
 
-    .summary {
-        font-size: 1em;
-    }
+            h1 {
+                font-size: 24px; /* Reduce heading size */
+            }
+        }
 
-    th, td {
-        padding: 8px;
-    }
-}
+        /* Separate section for EBSCO eBooks */
+        .special-section {
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 85%;
+            background-color: #f0f8ff; /* Light blue background */
+            border: 1px solid #ccc; /* Border for the section */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for the section */
+            text-align: center;
+        }
 
-@media (max-width: 490px) {
-    .header h1 {
-        font-size: 1.5em;
-    }
+        .special-section h2 {
+            color: #333;
+            font-size: 28px;
+        }
 
-    .summary {
-        font-size: 0.9em;
-    }
+        .special-section a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #3498db; /* Button background color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
 
-    .table-container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    th, td {
-        font-size: 0.9em;
-        padding: 5px;
-    }
-}
-
+        .special-section a:hover {
+            background-color: #2980b9; /* Darker shade on hover */
+        }
     </style>
-   
-   <div class="library-collection">
-    <div class="header">
-        <h1>LIBRARY COLLECTION</h1>
-        <hr class="underline">
-    </div>
-    <div class="summary">
-        <p>No of Books: 4890 - No Titles: 1320 - eBooks: 4400</p>
-    </div>
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Department</th>
-                    <th>Volume</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Computer</td>
-                    <td>931</td>
-                </tr>
-                <tr>
-                    <td>AI & DS</td>
-                    <td>531</td>
-                </tr>
-                <tr>
-                    <td>Mechanical</td>
-                    <td>1164</td>
-                </tr>
-                <!-- Add more rows as needed -->
-                <tr>
-                    <td>Total</td>
-                    <td>4890</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
+</head>
+<body>
 
+    <h1>E-BOOKS</h1>
 
+    <table>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Title</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>PDF Drive</td>
+                <td><a href="https://www.pdfdrive.com" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>BOOK BOON</td>
+                <td><a href="https://www.bookboon.com" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Free Tech Book</td>
+                <td><a href="http://www.freetechbooks.com/" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ebook4free</td>
+                <td><a href="https://www.ebook4free.com" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Project Gutenberg</td>
+                <td><a href="https://www.gutenberg.org" target="_blank">Click Here</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Separate section for EBSCO eBooks -->
+    <div class="special-section">
+        <h2>EBSCO eBooks</h2>
+        <p>Explore a vast collection of eBooks available through EBSCO.</p>
+        <a href="https://login.ebsco.com/?requestIdentifier=aca6d650-b2a5-4cbe-b85a-6511ddfc1c11&acrValues=uid&ui_locales&redirect_uri=https://logon.ebsco.zone/api/dispatcher/continue/prompted?state=YTdiYWRiM2U0MzJhNDcyYzkxMGZlMjhlMGM4ZGVhZjU=&authRequest=eyJraWQiOiIxNjg2MTQ5MjEzNjMxIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5lYnNjby56b25lXC9hcGlcL2Rpc3BhdGNoZXIiLCJhdXRoUmVxdWVzdCI6eyJncmFudF90eXBlIjoiYXV0aG9yaXphdGlvbl9jb2RlIiwic2NvcGUiOiJvcGVuaWQgZW1haWwgYWZmaWxpYXRpb24iLCJhY3JfdmFsdWVzIjoidWlkIiwicmVzcG9uc2VfdHlwZSI6ImNvZGUiLCJyZWRpcmVjdF91cmkiOiJodHRwczpcL1wvc2VhcmNoLmVic2NvaG9zdC5jb21cL3dlYmF1dGhcL1Byb21wdGVkQ2FsbGJhY2suYXNweCIsInN0YXRlIjoiQTNSSEx4LW5vRVlrQi1lSVRIZTJvR0s2emc3MHNwdlhkUGUxWmNKTWlrdUtJdEszRlpYdERNRlI4SEstMW9ZZ1hELVcyLWltNFlLX2tJSktnM2twdGdRZTlYQV94RHR0STZCblVSbjA1MEE0RDVfZHhFeVpJYTFWVndZTDlCS01Va20yNEVWR0FMb1o2Tnl5ZjVPakJLQnNZVjVqSW1xNC00TmNZMUVkZmxkRC1XeHBFM2w1bDNId2xGRVUwdmt4X3E4WmpNZEtLVGZPZGllWUVhb0xnc1M1UURfMW8wTG5Ka25XVEFZYjNwdHhZcjM1SWJqbTY5SjdvcVE2M1ZpSnc2Wjc0VjJNVXRQZEoxU0RscjRLVGtWdF80X3VzQnVld2Zlb0lEM2I5SzYwMTlSR3NHVkZHc3NyZXFnT040YlVpdjQwZHBwYjJsNVMydjNCcXI4aDZLMXE4RnZjeUxoS1RaMFQ1WlV6TUtzNzJ1ZyIsImNsaWVudF9pZCI6ImF3Z3ljSXg1N01yd25EUTVoNFVlNnlDVkVQMHI1TXQ5IiwicmVzcG9uc2VfbW9kZSI6InF1ZXJ5IiwicmVxSWQiOiJhY2E2ZDY1MC1iMmE1LTRjYmUtYjg1YS02NTExZGRmYzFjMTEifSwiaWF0IjoxNzI1MTY0MDU0LCJqdGkiOiIxY2Y0MDk5Yy1jNjQ1LTQ2ZDktYjI1Yy0yNzFiMDcxZWNjYmUiLCJyZXFJZCI6ImFjYTZkNjUwLWIyYTUtNGNiZS1iODVhLTY1MTFkZGZjMWMxMSJ9.TiXhNUzAhXBra1qV0iyWLg9zodJtR6zTfeC0zmNOrFDMuaGvxHj83HXBIzFcmkMB4ov60jWl8Spj0birj4Dhnv12lJPHbIoSwSl5PkInQ2rWoEed53QQqCZ7U20NNeKjsO0DoY8vdfa7iDc31JmhhV2XXHidN-WUOJ2qZguN0uCxvgpLG82Fj2WO0rK3R24tdMdnzJlS-ZN35INhdq-zjsta224Zv11hsBKEykI9_Hpk2ZobbaPJHY3O3OzO9tBj1xlZ3gSF-1hZvWQkPy7MkwtgUBSxvB1LSeqg2WyV24o_Oj1R5V8ndDSRxP7SYCetj6ka65S2fgUUGj5QUneDHg" target="_blank">Click Here</a>
+    </div>
     <!-- Footer Start -->
     
     <!-- JavaScript Libraries -->

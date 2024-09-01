@@ -92,8 +92,8 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">E Database</a>
                         <div class="dropdown-menu m-0">
-                            <a href="detail.html" class="dropdown-item">EBSCO</a>
-                            <a href="feature.html" class="dropdown-item">E-Books</a>
+                            <a href="https://web.s.ebscohost.com/ehost/search/basic?vid=0&sid=421b9c19-dd06-4bdd-988b-e0710e25c372%40redis" class="dropdown-item">EBSCO</a>
+                            <a href="e-book.html" class="dropdown-item">E-Books</a>
                             <a href="team.html" class="dropdown-item">E-Journals</a>
                             <a href="testimonial.html" class="dropdown-item">DELNET</a>
                         </div>
@@ -135,143 +135,168 @@
             </div>
         </nav>
     </div>
-    
-    
-    <!-- Navbar End -->
-
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-.library-collection {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff; /* White background */
-    color: #000000; /* Black text for main content */
-}
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.header {
-    padding: 20px;
-    border-bottom: 2px solid #007BFF; /* Blue underline for visual separation */
-}
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
 
-.header h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #007BFF; /* Blue text for the main title */
-}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
 
-.summary {
-    margin: 20px 0;
-    font-size: 1.2em;
-    color: #007BFF; /* Blue color for the summary text */
-    font-weight: bold;
-}
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
 
-.table-container {
-    margin: 20px auto;
-    width: 90%;
-    max-width: 800px;
-    background-color: #ffffff; /* White background for the table */
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a boxed effect */
-    border: 1px solid #dddddd; /* Light grey border for the box */
-}
+        th {
+            background-color: #0056b3;
+            color: white;
+        }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-}
+        tbody tr:hover {
+            background-color: #e8f0fe;
+        }
 
-th, td {
-    padding: 10px;
-    border-bottom: 1px solid #dddddd;
-}
+        a {
+            color: #0056b3;
+        }
 
-th {
-    background-color: #007BFF; /* Blue background for table headers */
-    color: #ffffff; /* White text for table headers */
-}
+        a:hover {
+            text-decoration: underline;
+        }
 
-td {
-    color: #000000; /* Black text for table content */
-}
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+            
+            th, td {
+                font-size: 14px;
+            }
+        }
 
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 2em;
-    }
-
-    .summary {
-        font-size: 1em;
-    }
-
-    th, td {
-        padding: 8px;
-    }
-}
-
-@media (max-width: 490px) {
-    .header h1 {
-        font-size: 1.5em;
-    }
-
-    .summary {
-        font-size: 0.9em;
-    }
-
-    .table-container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    th, td {
-        font-size: 0.9em;
-        padding: 5px;
-    }
-}
-
+        @media (max-width: 490px) {
+            h1 {
+                font-size: 20px;
+            }
+            
+            th, td {
+                font-size: 12px;
+            }
+        }
     </style>
-   
-   <div class="library-collection">
-    <div class="header">
-        <h1>LIBRARY COLLECTION</h1>
-        <hr class="underline">
-    </div>
-    <div class="summary">
-        <p>No of Books: 4890 - No Titles: 1320 - eBooks: 4400</p>
-    </div>
-    <div class="table-container">
+</head>
+<body>
+    <div class="container">
+        <h1>E-Journals</h1>
         <table>
             <thead>
                 <tr>
-                    <th>Department</th>
-                    <th>Volume</th>
+                    <th>SI No</th>
+                    <th>Title</th>
+                    <th>Link</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Computer</td>
-                    <td>931</td>
+                    <td>1</td>
+                    <td>Journal of Civil & Environmental Engineering  </td>
+                    <td><a href="https://www.hilarispublisher.com/civil-environmental-engineering.html">Link Here</a></td>
                 </tr>
                 <tr>
-                    <td>AI & DS</td>
-                    <td>531</td>
+                    <td>2</td>
+                    <td>Journal of Steel Structures & Construction</td>
+                    <td><a href="#">Link Here</a></td>
                 </tr>
                 <tr>
-                    <td>Mechanical</td>
-                    <td>1164</td>
+                    <td>3</td>
+                    <td>Journal of Textile Science & Engineering</td>
+                    <td><a href="#">Link Here</a></td>
                 </tr>
-                <!-- Add more rows as needed -->
                 <tr>
-                    <td>Total</td>
-                    <td>4890</td>
+                    <td>4</td>
+                    <td>Journal of Electrical Engineering and Electronic Technology</td>
+                    <td><a href="#">Link Here</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Journal of Electrical & Electronic Systems</td>
+                    <td><a href="#">Link Here</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>International Journal of Advancements in Technology</td>
+                    <td><a href="#">Link Here</a></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>International Journal of Innovative Research in Science, Engineering and Technology </td>
+                    <td><a href="#">Link Here</a></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Advances in Automobile Engineering</td>
+                    <td><a href="#">Link Here</a></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Directory of Open Access Journals</td>
+                    <td><a href="#">Link Here</a></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Journal of Applied Mechanical Engineering</td>
+                    <td><a href="#">Link Here</a></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>  Industrial Engineering & Management</td>
+                    <td><a href="#">Link Here</a></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Advances in Robotics & Automation</td>
+                    <td><a href="#">Link Here</a></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Journal of Telecommunications System & Management </td>
+                    <td><a href="#">Link Here</a></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Journal of Information Technology & Software Engineering</td>
+                    <td><a href="#">Link Here</a></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Journal of Computer Engineering & Information Technolog y</td>
+                    <td><a href="#">Link Here</a></td>
                 </tr>
             </tbody>
         </table>
     </div>
-</div>
-
-
     <!-- Footer Start -->
     
     <!-- JavaScript Libraries -->
