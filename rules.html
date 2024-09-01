@@ -28,53 +28,23 @@
 
 <body>
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark">
-        <div class="row py-2 px-lg-5">
-            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center text-white">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
-                    <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
-                </div>
-            </div>
-            <div class="col-lg-6 text-center text-lg-right">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="text-white px-2" href="">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="text-white pl-2" href="">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+     
     <!-- Topbar End -->
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
-            <a href="index.html" class="navbar-brand ml-lg-3 d-flex align-items-center">
-                <img src="img/logo.png" alt="DYPCOEI LIBRARY Logo" class="logo-img mr-2">
+    <div class="fluid-container p-0">
+        <nav class="navbar navbar-expand-lg bg-light navbar-bright py-3 py-lg-0 px-lg-5">
+            <a href="home.html" class="navbar-logo ml-lg-3 d-flex align-items-center">
+                <img src="img/logo.png" alt="DYPCOEI LIBRARY Logo" class="logo-image mr-2">
             </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarMenu">
                 <div class="navbar-nav mx-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-    
-                    <div class="nav-item dropdown">
+                    <a href="home.html" class="nav-link active">Home</a>
+                    <div class="nav-dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About Library</a>
                         <div class="dropdown-menu m-0">
                             <a href="libraryadvisoycommittee.html" class="dropdown-item">Library Advisory Committee</a>
@@ -85,49 +55,44 @@
                             <a href="team.html" class="dropdown-item">Our Team</a>
                         </div>
                     </div>
-    
-                    <a href="notice.html" class="nav-item nav-link">Notice</a>
-                    <a href="form.html" class="nav-item nav-link">Form Formats</a>
-    
-                    <div class="nav-item dropdown">
+                    <a href="notice.html" class="nav-link">Notice</a>
+                    <a href="form.html" class="nav-link">Form Formats</a>
+                    <div class="nav-dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">E Database</a>
                         <div class="dropdown-menu m-0">
-                            <a href="detail.html" class="dropdown-item">EBSCO</a>
-                            <a href="feature.html" class="dropdown-item">E-Books</a>
-                            <a href="team.html" class="dropdown-item">E-Journals</a>
-                            <a href="testimonial.html" class="dropdown-item">DELNET</a>
+                            <a href="https://web.s.ebscohost.com/ehost/search/basic?vid=0&sid=421b9c19-dd06-4bdd-988b-e0710e25c372%40redis" class="dropdown-item">EBSCO</a>
+                            <a href="e-book.html" class="dropdown-item">E-Books</a>
+                            <a href="E-Journals.html" class="dropdown-item">E-Journals</a>
+                            <a href="https://discovery1.delnet.in/" class="dropdown-item">DELNET</a>
                         </div>
                     </div>
-    
-                    <div class="nav-item dropdown">
+                    <div class="nav-dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">IMP Links</a>
                         <div class="dropdown-menu m-0">
-                            <a href="detail.html" class="dropdown-item">NPLEL Videos</a>
+                            <a href="https://ww25.nptelvideos.in/?subid1=20240901-0357-01ba-bc80-fee55f95a80c" class="dropdown-item">NPTEL Videos</a>
                             <a href="feature.html" class="dropdown-item">SWAYAM Online Course</a>
                             <a href="team.html" class="dropdown-item">News Paper Link</a>
                             <a href="testimonial.html" class="dropdown-item">News Paper Clipping</a>
                             <a href="team.html" class="dropdown-item">National Digital Library</a>
                             <a href="testimonial.html" class="dropdown-item">E-PG Pathshala</a>
-                            <a href="testimonial.html" class="dropdown-item">Aptitude Questions</a>
-                            <a href="detail.html" class="dropdown-item">Jobs Links</a> <!-- Simplified by removing nesting -->
+                            <a href="https://www.indiabix.com/" class="dropdown-item">Aptitude Questions</a>
+                            <a href="detail.html" class="dropdown-item">Jobs Links</a>
                         </div>
                     </div>
-    
-                    <div class="nav-item dropdown">
+                    <div class="nav-dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Institutional Repository</a>
                         <div class="dropdown-menu m-0">
                             <a href="detail.html" class="dropdown-item">Photos</a>
                             <a href="feature.html" class="dropdown-item">Our Features</a>
                             <a href="team.html" class="dropdown-item">NCTEP19</a>
                             <a href="testimonial.html" class="dropdown-item">College Magazine</a>
-                            <a href="detail.html" class="dropdown-item">BE Project</a> <!-- Simplified by removing nesting -->
+                            <a href="detail.html" class="dropdown-item">BE Project</a>
                         </div>
                     </div>
-    
-                    <div class="nav-item dropdown">
+                    <div class="nav-dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">OPAC</a>
                         <div class="dropdown-menu m-0">
-                           <a href="detail.html" class="dropdown-item">OPAC 1</a>
+                            <a href="detail.html" class="dropdown-item">OPAC 1</a>
                             <a href="feature.html" class="dropdown-item">OPAC 2</a>
                         </div>
                     </div>
@@ -135,7 +100,320 @@
             </div>
         </nav>
     </div>
+    <!-- Navbar End -->
+    <style>
+    .fluid-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px; /* Add padding for small screens */
+    }
     
+    /* Navbar */
+    .navbar-bright {
+        background-color: #f8f9fa;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 1rem; /* Adjusted padding */
+    }
+    
+    .navbar-logo img.logo-image {
+        height: 80px;
+    }
+    
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 1rem; /* Spacing between nav items */
+        align-items: center;
+    }
+    
+    .nav-link {
+        padding: 0.5rem 0.75rem; /* Adjusted padding */
+        color: #333;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.8rem; /* Font size */
+        transition: color 0.3s ease, background-color 0.3s ease;
+        border-radius: 0.25rem;
+    }
+    
+    .nav-link:hover,
+    .nav-link.active {
+        color: #0056b3; /* Hover color */
+        background-color: #e3f2fd; /* Hover background */
+        text-decoration: none;
+    }
+    
+    .nav-dropdown {
+        position: relative;
+    }
+    
+    .nav-dropdown .dropdown-toggle::after {
+        content: " \25BC"; /* Unicode for a downward arrow */
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .nav-dropdown:hover .dropdown-toggle::after {
+        transform: rotate(180deg); /* Arrow rotation on hover */
+    }
+    
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        min-width: 12rem;
+        padding: 0.5rem 0;
+        margin: 0.25rem 0 0;
+        font-size: 0.875rem; /* Font size */
+        color: #212529;
+        text-align: left;
+        background-color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .nav-dropdown:hover .dropdown-menu {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .dropdown-item {
+        padding: 0.5rem 1rem; /* Adjusted padding */
+        color: #333;
+        text-decoration: none;
+        font-weight: 400;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .dropdown-item:hover {
+        background-color: #f1f1f1;
+        color: #0056b3; /* Hover color */
+    }
+    
+    /* Navbar Toggle (for mobile view) */
+    .navbar-toggler {
+        border: none;
+        background-color: #ddd;
+        padding: 0.375rem 0.75rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .navbar-toggler:hover {
+        background-color: #ccc;
+    }
+    
+    .navbar-toggler-icon {
+        background-color: #333;
+        width: 22px;
+        height: 2px;
+        display: block;
+        position: relative;
+    }
+    
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        content: '';
+        background-color: #333;
+        width: 22px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+    
+    .navbar-toggler-icon::before {
+        top: -6px;
+    }
+    
+    .navbar-toggler-icon::after {
+        bottom: -6px;
+    }
+    
+    /* Toggle Collapse */
+    .collapse {
+        display: none;
+    }
+    
+    .collapse.show {
+        display: block;
+    }
+    
+    /* Responsive Behavior */
+    @media (max-width: 992px) {
+        .navbar-collapse {
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-top: 1px solid #ddd;
+        }
+    
+        .navbar-nav {
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        .nav-link {
+            padding: 0.75rem 0;
+            width: 100%;
+        }
+    
+        .nav-dropdown {
+            width: 100%;
+        }
+    
+        .nav-dropdown .dropdown-menu {
+            position: static;
+            display: none;
+            width: 100%;
+            border: none;
+            box-shadow: none;
+            background-color: #f8f9fa;
+        }
+    
+        .nav-dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .navbar-bright {
+            padding: 0.5rem 1rem;
+        }
+    
+        .navbar-nav {
+            align-items: flex-start;
+        }
+    
+        .navbar-collapse.show {
+            padding: 0.5rem 1rem;
+            width: 100%;
+        }
+    
+        .navbar-toggler-icon {
+            width: 18px;
+        }
+    
+        .navbar-toggler-icon::before,
+        .navbar-toggler-icon::after {
+            width: 18px;
+        }
+    
+        .nav-dropdown .dropdown-toggle::after {
+            cursor: pointer;
+        }
+    
+        .nav-dropdown .dropdown-toggle:active + .dropdown-menu {
+            display: none;
+        }
+    }
+    
+    @media (max-width: 490px) {
+        .navbar-bright {
+            padding: 0.25rem 0.5rem; /* Further reduced padding */
+        }
+    
+        .nav-link {
+            font-size: 0.85rem; /* Adjust font size */
+            padding: 0.5rem 0.5rem; /* Reduce padding for small screens */
+        }
+    
+        .dropdown-item {
+            padding: 0.5rem 0.75rem; /* Reduced padding for dropdown items */
+            font-size: 0.85rem; /* Smaller font size */
+        }
+    
+        .navbar-nav {
+            gap: 0.75rem; /* Reduce gap between nav items */
+        }
+    
+        .navbar-toggler-icon {
+            width: 16px;
+        }
+    
+        .navbar-toggler-icon::before,
+        .navbar-toggler-icon::after {
+            width: 16px;
+        }
+    
+        .fluid-container {
+            padding: 0 10px; /* Further reduce padding */
+        }
+    
+        .navbar-logo img.logo-image {
+            height: 40px; /* Reduce logo size for small screens */
+        }
+    }
+    
+    /* JavaScript to close menu on outside click */
+    body {
+        position: relative;
+        min-height: 100vh;
+    }
+    
+    .navbar-collapse.show ~ body:before {
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+    
+    /* Close navbar when clicking outside */
+    .navbar-collapse.show + .collapse-background {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: transparent;
+        z-index: 1000;
+        cursor: pointer;
+    }
+    
+    .collapse-background {
+        display: none;
+    }
+    
+    </style>
+    <script>
+        // Close navbar when clicking outside
+    document.addEventListener('click', function (e) {
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+        var collapseBackground = document.querySelector('.collapse-background');
+        var target = e.target;
+    
+        if (navbarCollapse.classList.contains('show') && !navbarCollapse.contains(target) && !target.closest('.navbar-toggler')) {
+            navbarCollapse.classList.remove('show');
+            collapseBackground.style.display = 'none';
+        }
+    });
+    
+    // Close submenu on arrow click
+    document.querySelectorAll('.nav-dropdown .dropdown-toggle').forEach(function (dropdown) {
+        dropdown.addEventListener('click', function () {
+            var dropdownMenu = this.nextElementSibling;
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+    
+    </script>
     <!-- Navbar End -->
     <style>
         /* styles.css */
@@ -233,7 +511,124 @@
     </div>
     
     <!-- Footer Start -->
+    <footer class="footer bg-dark text-white py-3">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Info and Opening Hours -->
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <h6>Contact & Hours</h6>
+                    <p><i class="fa fa-phone-alt mr-1"></i>+012 345 6789</p>
+                    <p><i class="fa fa-envelope mr-1"></i>library@example.edu</p>
+                    <p><i class="fa fa-map-marker-alt mr-1"></i>123 College Road, City</p>
+                    <p>Mon-Fri: 8 AM - 8 PM</p>
+                    <p>Sat: 9 AM - 5 PM | Sun: Closed</p>
+                </div>
     
+                <!-- Quick Links -->
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Catalog</a></li>
+                        <li><a href="#" class="text-white">eBooks</a></li>
+                        <li><a href="#" class="text-white">Guides</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="col-lg-4 col-md-12 mb-3 text-center">
+                    <h6>Follow Us</h6>
+                    <div class="d-inline-flex">
+                        <a class="text-white px-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-white px-1" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="text-white px-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="text-white px-1" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2024 College Library. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <style>
+      /* Footer Styles */
+    .footer {
+        background: linear-gradient(135deg, #1e3a8a, #3498db); /* More vibrant gradient */
+        color: #f3f4f6; /* Slightly off-white for better readability */
+        padding: 1rem 0; /* Further reduced padding */
+        font-family: 'Roboto', sans-serif; /* Modern font */
+        font-weight: 300;
+        height: 250px;
+    }
+    
+    .footer h6 {
+        font-size: 1.2rem; /* Slightly larger size for better readability */
+        margin-bottom: 0.5rem; /* Maintain spacing */
+        color: #fbbf24; /* Improved accent color */
+        font-weight: 500; /* Slightly bolder for emphasis */
+    }
+    
+    .footer p, .footer a {
+        font-size: .95rem; /* Larger text for better readability */
+        margin-bottom: 0.4rem; /* Maintain spacing */
+        transition: color 0.3s ease; /* Hover effect transition */
+    }
+    
+    .footer a {
+        color: #d1d5db; /* Light grey for a clean look */
+        text-decoration: none; /* Remove underline */
+    }
+    
+    .footer a:hover {
+        color: #fbbf24; /* Accent color on hover */
+    }
+    
+    .footer ul {
+        padding-left: 0;
+        list-style-type: none; /* Clean list */
+    }
+    
+    .footer ul li {
+        margin-bottom: 0.4rem; /* Maintain spacing */
+        line-height: 1.6; /* Slightly increased line-height for readability */
+    }
+    
+    .footer .d-inline-flex a {
+        font-size: 1.3rem; /* Slightly larger icons */
+        margin: 0 0.3rem; /* Increased spacing for icons */
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+    
+    .footer .d-inline-flex a:hover {
+        color: #fbbf24; /* Accent color on hover */
+        transform: scale(1.1); /* Zoom effect on hover */
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .footer .col-lg-4 {
+            margin-bottom: 1rem; /* Adjusted margin for smaller screens */
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .footer {
+            padding: 1rem 0; /* Maintain padding */
+            text-align: center;
+        }
+    
+        .footer .col-md-6 {
+            margin-bottom: 1rem;
+        }
+    }
+    
+    
+    </style>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
