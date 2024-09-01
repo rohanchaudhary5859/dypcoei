@@ -136,163 +136,141 @@
         </nav>
     </div>
     
- <!-- Navbar End -->
-<style>
-    body {
-        font-family: 'Roboto', sans-serif;
-        background-color: #f4f4f9;
-        margin: 0;
-        padding: 0;
+    <!-- Navbar End -->
+
+    <style>
+
+.library-collection {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text for main content */
+}
+
+.header {
+    padding: 20px;
+    border-bottom: 2px solid #007BFF; /* Blue underline for visual separation */
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #007BFF; /* Blue text for the main title */
+}
+
+.summary {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #007BFF; /* Blue color for the summary text */
+    font-weight: bold;
+}
+
+.table-container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff; /* White background for the table */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a boxed effect */
+    border: 1px solid #dddddd; /* Light grey border for the box */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+th {
+    background-color: #007BFF; /* Blue background for table headers */
+    color: #ffffff; /* White text for table headers */
+}
+
+td {
+    color: #000000; /* Black text for table content */
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
     }
 
-    .container {
-        width: 80%;
-        margin: 40px auto;
-        background-color: #ffffff;
-        padding: 30px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
+    .summary {
+        font-size: 1em;
     }
 
-    header {
-        text-align: center;
-        background-color:#ffffff;
-        padding: 25px;
+    th, td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 490px) {
+    .header h1 {
+        font-size: 1.5em;
     }
 
-    header h1 {
-        margin: 0;
-        font-size: 2.5em;
-        color: #007BFF;
-        letter-spacing: 3px;
-        text-transform: uppercase;
+    .summary {
+        font-size: 0.9em;
     }
 
-
-    .intro {
-        padding: 25px;
-        text-align: center;
-        font-size: 1.3em;
-        line-height: 1.8;
-        color: #000000;
+    .table-container {
+        width: 100%;
+        padding: 10px;
     }
 
-    /* Card style for librarian info */
-    .librarian-card {
-        display: flex;
-        align-items: center;
-        margin-top: 30px;
-        padding: 25px;
-        background-color: #f9f9f9;
-        border-radius: 15px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    th, td {
+        font-size: 0.9em;
+        padding: 5px;
     }
+}
 
-    .librarian-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    .librarian-card img {
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 30px;
-    }
-
-    .librarian-card .info {
-        flex: 1;
-    }
-
-    .librarian-card .info h3 {
-        margin: 0;
-        font-size: 1.8em;
-        color: #007BFF;
-    }
-
-    .librarian-card .info p {
-        margin: 8px 0 0;
-        font-size: 1.2em;
-        color: #000000;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-        .container {
-            width: 90%;
-            margin: 20px auto;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-        }
-
-        .librarian-card img {
-            width: 110px;
-            height: 110px;
-        }
-    }
-
-    @media (max-width: 490px) {
-        .container {
-            width: 95%;
-            margin: 15px auto;
-            padding: 20px;
-        }
-
-        header h1 {
-            font-size: 2em;
-        }
-
-        .librarian-card {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .librarian-card img {
-            margin: 0 0 15px 0;
-        }
-
-        .librarian-card .info h3 {
-            font-size: 1.5em;
-        }
-
-        .librarian-card .info p {
-            font-size: 1.1em;
-        }
-    }
-</style>
-
-<div class="container">
-    <header>
-        <h1>Our Team</h1>
-        <hr>
-    </header>
-
-    <div class="intro">
-        Our library is managed by a team of dedicated professionals who are committed to providing exceptional service. We have a total of 3 staff members: 1 Librarian, 1 Assistant Librarian, and 1 Attendant.
+    </style>
+   
+   <div class="library-collection">
+    <div class="header">
+        <h1>LIBRARY COLLECTION</h1>
+        <hr class="underline">
     </div>
-
-    <div class="librarian-card">
-        <img src="images.jpg" alt="Ranjeet Shinde">
-        <div class="info">
-            <h3>Ranjeet Shinde</h3>
-            <p>Librarian</p>
-        </div>
+    <div class="summary">
+        <p>No of Books: 4890 - No Titles: 1320 - eBooks: 4400</p>
     </div>
-
-    <div class="librarian-card">
-        <img src="1579237526197.jpg" alt="Ashvini Chavan">
-        <div class="info">
-            <h3>Ashvini Chavan</h3>
-            <p>Assistant Librarian</p>
-        </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>Volume</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Computer</td>
+                    <td>931</td>
+                </tr>
+                <tr>
+                    <td>AI & DS</td>
+                    <td>531</td>
+                </tr>
+                <tr>
+                    <td>Mechanical</td>
+                    <td>1164</td>
+                </tr>
+                <!-- Add more rows as needed -->
+                <tr>
+                    <td>Total</td>
+                    <td>4890</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 
-    
+
     <!-- Footer Start -->
     
     <!-- JavaScript Libraries -->

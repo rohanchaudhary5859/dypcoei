@@ -136,163 +136,196 @@
         </nav>
     </div>
     
- <!-- Navbar End -->
-<style>
-    body {
-        font-family: 'Roboto', sans-serif;
-        background-color: #f4f4f9;
-        margin: 0;
-        padding: 0;
-    }
+    <!-- Navbar End -->
 
-    .container {
-        width: 80%;
-        margin: 40px auto;
-        background-color: #ffffff;
-        padding: 30px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
-    }
-
-    header {
-        text-align: center;
-        background-color:#ffffff;
-        padding: 25px;
-    }
-
-    header h1 {
-        margin: 0;
-        font-size: 2.5em;
-        color: #007BFF;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-    }
-
-
-    .intro {
-        padding: 25px;
-        text-align: center;
-        font-size: 1.3em;
-        line-height: 1.8;
-        color: #000000;
-    }
-
-    /* Card style for librarian info */
-    .librarian-card {
-        display: flex;
-        align-items: center;
-        margin-top: 30px;
-        padding: 25px;
-        background-color: #f9f9f9;
-        border-radius: 15px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .librarian-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    .librarian-card img {
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 30px;
-    }
-
-    .librarian-card .info {
-        flex: 1;
-    }
-
-    .librarian-card .info h3 {
-        margin: 0;
-        font-size: 1.8em;
-        color: #007BFF;
-    }
-
-    .librarian-card .info p {
-        margin: 8px 0 0;
-        font-size: 1.2em;
-        color: #000000;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
+    <style>
         .container {
-            width: 90%;
-            margin: 20px auto;
+            width: 85%;
+            margin: 40px auto;
+            background-color: #fff; /* White background */
+            padding: 25px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+            border-radius: 10px;
         }
-
-        header h1 {
-            font-size: 2.5em;
-        }
-
-        .librarian-card img {
-            width: 110px;
-            height: 110px;
-        }
-    }
-
-    @media (max-width: 490px) {
-        .container {
-            width: 95%;
-            margin: 15px auto;
-            padding: 20px;
-        }
-
-        header h1 {
-            font-size: 2em;
-        }
-
-        .librarian-card {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .librarian-card img {
-            margin: 0 0 15px 0;
-        }
-
-        .librarian-card .info h3 {
-            font-size: 1.5em;
-        }
-
-        .librarian-card .info p {
-            font-size: 1.1em;
-        }
-    }
-</style>
-
-<div class="container">
-    <header>
-        <h1>Our Team</h1>
-        <hr>
-    </header>
-
-    <div class="intro">
-        Our library is managed by a team of dedicated professionals who are committed to providing exceptional service. We have a total of 3 staff members: 1 Librarian, 1 Assistant Librarian, and 1 Attendant.
-    </div>
-
-    <div class="librarian-card">
-        <img src="images.jpg" alt="Ranjeet Shinde">
-        <div class="info">
-            <h3>Ranjeet Shinde</h3>
-            <p>Librarian</p>
-        </div>
-    </div>
-
-    <div class="librarian-card">
-        <img src="1579237526197.jpg" alt="Ashvini Chavan">
-        <div class="info">
-            <h3>Ashvini Chavan</h3>
-            <p>Assistant Librarian</p>
-        </div>
-    </div>
-</div>
-
     
+        header {
+            text-align: center;
+            background-color: #007BFF; /* Slightly darker blue header background */
+            color: #fff; /* White text */
+            padding: 25px;
+            border-radius: 10px 10px 0 0;
+        }
+    
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            color: white;
+            letter-spacing: 1px; /* Slight spacing for letters */
+            font-weight: 700; /* Bold font */
+        }
+    
+        .intro {
+            padding: 20px;
+            background-color: #f1f3f5; /* Softer light grey background for the intro section */
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: justify;
+            font-size: 1.2em;
+            line-height: 1.6; /* Increased line height for readability */
+        }
+    
+        .committee-list {
+            margin-top: 35px;
+        }
+    
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+    
+        table th, table td {
+            padding: 18px;
+            text-align: left;
+            border-bottom: 2px solid #dee2e6; /* Thicker border for distinction */
+        }
+    
+        table th {
+            background-color: #007BFF; /* Matching header blue background for table */
+            color: #fff; /* White text */
+            text-transform: uppercase;
+            font-size: 1.1em;
+            letter-spacing: 0.5px; /* Slight spacing for letters */
+        }
+    
+        table tr:hover {
+            background-color: #f8f9fa; /* Highlight row on hover with a softer background */
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        }
+    
+        table tr:last-child td {
+            border-bottom: none;
+        }
+    
+        table td {
+            color: #2f2e2e; /* Slightly lighter text color for table cells */
+        }
+    
+        /* Adjustments for tablets and below */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                margin: 20px auto;
+            }
+    
+            header h1 {
+                font-size: 2.2em;
+            }
+    
+            table th, table td {
+                padding: 12px;
+                font-size: 0.9em; /* Slightly smaller font for table on mobile */
+            }
+        }
+    
+        /* Further adjustments for smaller screens (490px and below) */
+        @media (max-width: 490px) {
+            .container {
+                width: 95%;
+                margin: 15px auto;
+                padding: 15px;
+            }
+    
+            header {
+                padding: 15px;
+            }
+    
+            header h1 {
+                font-size: 1.8em;
+            }
+    
+            .intro {
+                padding: 15px;
+                font-size: 1em;
+            }
+    
+            table th, table td {
+                padding: 10px;
+                font-size: 0.85em; /* Smaller font for table on small screens */
+            }
+    
+            table th {
+                font-size: 1em;
+            }
+        }
+    </style>
+   
+        <div class="container">
+            <header>
+                <h1>Library Advisory Committee</h1>
+            </header>
+            
+            <section class="intro">
+                <p>The College has a Library Advisory Committee consisting of senior faculty members, which is advisory in nature. It meets once every term to decide on the further program and policies of the Library.</p>
+            </section>
+            
+            <section class="committee-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr. No</th>
+                            <th>Name of the Committee Member</th>
+                            <th>Designation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dr. Suresh N Mali</td>
+                            <td>Principal</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Mr. Laxmikant Malphedwar</td>
+                            <td>Chairperson</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Ms. Pratiksha Patil</td>
+                            <td>Member</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Mrs. Anita Shinkar</td>
+                            <td>Member</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Mr. A.P. Chandgude</td>
+                            <td>Member</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Mrs. Asmita Mali</td>
+                            <td>Member</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Mrs. Ashvini Chavan (Asst. Librarian)</td>
+                            <td>Member</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Mr. Ranjeet Shinde (Librarian)</td>
+                            <td>Member Secretary</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+   
+    
+
     <!-- Footer Start -->
     
     <!-- JavaScript Libraries -->

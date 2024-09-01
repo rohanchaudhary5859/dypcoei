@@ -135,164 +135,167 @@
             </div>
         </nav>
     </div>
-    
- <!-- Navbar End -->
 <style>
-    body {
-        font-family: 'Roboto', sans-serif;
-        background-color: #f4f4f9;
-        margin: 0;
-        padding: 0;
-    }
+ 
 
-    .container {
-        width: 80%;
-        margin: 40px auto;
+    .header {
         background-color: #ffffff;
-        padding: 30px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
-    }
-
-    header {
+        padding: 30px 20px;
         text-align: center;
-        background-color:#ffffff;
-        padding: 25px;
+        color: white;
     }
 
-    header h1 {
+    .header h1 {
         margin: 0;
-        font-size: 2.5em;
         color: #007BFF;
+        font-size: 2.5rem;
         letter-spacing: 3px;
         text-transform: uppercase;
     }
 
-
-    .intro {
-        padding: 25px;
-        text-align: center;
-        font-size: 1.3em;
-        line-height: 1.8;
-        color: #000000;
+    .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 0 20px;
     }
 
-    /* Card style for librarian info */
-    .librarian-card {
+    .services-facilities {
         display: flex;
-        align-items: center;
-        margin-top: 30px;
-        padding: 25px;
-        background-color: #f9f9f9;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .services-facilities .section {
+        flex: 1;
+        min-width: 300px;
+        background-color: white;
         border-radius: 15px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 25px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .librarian-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    .services-facilities .section:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     }
 
-    .librarian-card img {
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 30px;
+    .services-facilities h2 {
+        font-size: 1.75rem;
+        color: #343a40;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #007BFF;
+        padding-bottom: 12px;
+        text-transform: uppercase;
     }
 
-    .librarian-card .info {
-        flex: 1;
-    }
-
-    .librarian-card .info h3 {
+    .services-facilities ul {
+        list-style: none;
+        padding-left: 0;
         margin: 0;
-        font-size: 1.8em;
+    }
+
+    .services-facilities ul li {
+        margin-bottom: 12px;
+        font-size: 1.1rem;
+        color: #555;
+        position: relative;
+        padding-left: 20px;
+    }
+
+    .services-facilities ul li::before {
+        content: "✔";
         color: #007BFF;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 1.1rem;
     }
 
-    .librarian-card .info p {
-        margin: 8px 0 0;
-        font-size: 1.2em;
-        color: #000000;
-    }
-
-    /* Responsive adjustments */
     @media (max-width: 768px) {
         .container {
-            width: 90%;
-            margin: 20px auto;
+            margin: 30px auto;
+            padding: 0 15px;
         }
 
-        header h1 {
-            font-size: 2.5em;
+        .services-facilities {
+            flex-direction: column;
         }
 
-        .librarian-card img {
-            width: 110px;
-            height: 110px;
+        .services-facilities .section {
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .services-facilities h2 {
+            font-size: 1.5rem;
+        }
+
+        .services-facilities ul li {
+            font-size: 1rem;
         }
     }
 
     @media (max-width: 490px) {
+        .header h1 {
+            font-size: 1.75rem;
+            letter-spacing: 2px;
+        }
+
         .container {
-            width: 95%;
-            margin: 15px auto;
-            padding: 20px;
+            margin: 20px auto;
+            padding: 0 10px;
         }
 
-        header h1 {
-            font-size: 2em;
+        .services-facilities .section {
+            padding: 15px;
         }
 
-        .librarian-card {
-            flex-direction: column;
-            text-align: center;
+        .services-facilities h2 {
+            font-size: 1.4rem;
         }
 
-        .librarian-card img {
-            margin: 0 0 15px 0;
-        }
-
-        .librarian-card .info h3 {
-            font-size: 1.5em;
-        }
-
-        .librarian-card .info p {
-            font-size: 1.1em;
+        .services-facilities ul li {
+            font-size: 0.95rem;
         }
     }
 </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Our Library Services & Facilities</h1>
+</div>
 
 <div class="container">
-    <header>
-        <h1>Our Team</h1>
-        <hr>
-    </header>
-
-    <div class="intro">
-        Our library is managed by a team of dedicated professionals who are committed to providing exceptional service. We have a total of 3 staff members: 1 Librarian, 1 Assistant Librarian, and 1 Attendant.
-    </div>
-
-    <div class="librarian-card">
-        <img src="images.jpg" alt="Ranjeet Shinde">
-        <div class="info">
-            <h3>Ranjeet Shinde</h3>
-            <p>Librarian</p>
+    <div class="services-facilities">
+        <div class="section">
+            <h2>Comprehensive Services</h2>
+            <ul>
+                <li>Personalized Bibliography Creation</li>
+                <li>Current Awareness Bulletins</li>
+                <li>Inter-Library Loan Coordination</li>
+                <li>Curated News Clipping Service</li>
+                <li>Expert Reference Assistance</li>
+            </ul>
         </div>
-    </div>
-
-    <div class="librarian-card">
-        <img src="1579237526197.jpg" alt="Ashvini Chavan">
-        <div class="info">
-            <h3>Ashvini Chavan</h3>
-            <p>Assistant Librarian</p>
+        <div class="section">
+            <h2>State-of-the-Art Facilities</h2>
+            <ul>
+                <li>Career Development Resources</li>
+                <li>Dynamic Display and Notification Boards</li>
+                <li>High-Speed Internet Access</li>
+                <li>New Arrivals Showcase</li>
+                <li>Archived News Clippings</li>
+                <li>Open Access Study Areas</li>
+                <li>Past Exam Paper Repository</li>
+                <li>Quiet Reading Room</li>
+            </ul>
         </div>
     </div>
 </div>
 
-    
     <!-- Footer Start -->
     
     <!-- JavaScript Libraries -->

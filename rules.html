@@ -136,162 +136,101 @@
         </nav>
     </div>
     
- <!-- Navbar End -->
-<style>
-    body {
-        font-family: 'Roboto', sans-serif;
-        background-color: #f4f4f9;
-        margin: 0;
-        padding: 0;
-    }
-
-    .container {
-        width: 80%;
-        margin: 40px auto;
-        background-color: #ffffff;
-        padding: 30px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
-    }
-
-    header {
-        text-align: center;
-        background-color:#ffffff;
-        padding: 25px;
-    }
-
-    header h1 {
-        margin: 0;
-        font-size: 2.5em;
-        color: #007BFF;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-    }
-
-
-    .intro {
-        padding: 25px;
-        text-align: center;
-        font-size: 1.3em;
-        line-height: 1.8;
-        color: #000000;
-    }
-
-    /* Card style for librarian info */
-    .librarian-card {
-        display: flex;
-        align-items: center;
-        margin-top: 30px;
-        padding: 25px;
-        background-color: #f9f9f9;
-        border-radius: 15px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .librarian-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    .librarian-card img {
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 30px;
-    }
-
-    .librarian-card .info {
-        flex: 1;
-    }
-
-    .librarian-card .info h3 {
-        margin: 0;
-        font-size: 1.8em;
-        color: #007BFF;
-    }
-
-    .librarian-card .info p {
-        margin: 8px 0 0;
-        font-size: 1.2em;
-        color: #000000;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
+    <!-- Navbar End -->
+    <style>
+        /* styles.css */
+    
+        
+    
         .container {
-            width: 90%;
-            margin: 20px auto;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-        }
-
-        .librarian-card img {
-            width: 110px;
-            height: 110px;
-        }
-    }
-
-    @media (max-width: 490px) {
-        .container {
-            width: 95%;
-            margin: 15px auto;
+            max-width: 85%;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
         }
-
-        header h1 {
-            font-size: 2em;
-        }
-
-        .librarian-card {
-            flex-direction: column;
+    
+        header {
+            background-color: #007BFF;
+            padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px 10px 0 0;
         }
-
-        .librarian-card img {
-            margin: 0 0 15px 0;
+    
+        header h1 {
+            color: #ffffff; 
+            font-size: 2rem;
+            margin: 0;
         }
-
-        .librarian-card .info h3 {
-            font-size: 1.5em;
+    
+        main {
+            padding: 20px;
         }
-
-        .librarian-card .info p {
-            font-size: 1.1em;
+    
+        ol {
+            list-style-type: decimal;
+            color: black;
+            margin: 20px 0;
+            padding-left: 20px;
         }
-    }
-</style>
-
-<div class="container">
-    <header>
-        <h1>Our Team</h1>
-        <hr>
-    </header>
-
-    <div class="intro">
-        Our library is managed by a team of dedicated professionals who are committed to providing exceptional service. We have a total of 3 staff members: 1 Librarian, 1 Assistant Librarian, and 1 Attendant.
+    
+        li {
+            margin-bottom: 15px;
+            color: black;
+            font-size: 1.1rem;
+        }
+    
+        p {
+            margin-top: 20px;
+            color: black;
+            font-size: 1.1rem;
+        }
+    
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+    
+            ol li,
+            p {
+                font-size: 1rem;
+            }
+        }
+    
+        @media (max-width: 490px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+    
+            ol li,
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+    
+    <div class="container">
+        <header>
+            <h1>Library Rules and Regulations</h1>
+        </header>
+        <main>
+            <ol>
+                <li><strong>Identity Card is compulsory for getting access to the library.</strong></li>
+                <li><strong>Enter your name and sign in the register kept at the entrance counter before entering the library.</strong></li>
+                <li><strong>Library borrower cards are not transferable.</strong><br>The borrower is responsible for the books borrowed on his/her card.</li>
+                <li><strong>Registration should be done to become a library member prior to using the library resources.</strong></li>
+                <li><strong>Student/Staff could not be able to submit the book on the same day.</strong></li>
+                <li><strong>Fine of 2 Rs/day will be charged after the due date of renew/return.</strong></li>
+                <li><strong>Silence to be maintained.</strong></li>
+                <li><strong>No discussion permitted inside the library.</strong></li>
+                <li><strong>Using Mobile phones and audio instruments with or without speaker or headphone is strictly prohibited in the library premises.</strong></li>
+                <li><strong>Show the books and other materials which are being taken out of the library to the staff at the entrance counter.</strong></li>
+            </ol>
+            <p><strong>Loss of cards:</strong><br>Loss of borrower card should be reported to the librarian. Duplicate card may be issued against formal application and Rs.50 fine.</p>
+        </main>
     </div>
-
-    <div class="librarian-card">
-        <img src="images.jpg" alt="Ranjeet Shinde">
-        <div class="info">
-            <h3>Ranjeet Shinde</h3>
-            <p>Librarian</p>
-        </div>
-    </div>
-
-    <div class="librarian-card">
-        <img src="1579237526197.jpg" alt="Ashvini Chavan">
-        <div class="info">
-            <h3>Ashvini Chavan</h3>
-            <p>Assistant Librarian</p>
-        </div>
-    </div>
-</div>
-
     
     <!-- Footer Start -->
     

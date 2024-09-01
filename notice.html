@@ -92,23 +92,23 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">E Database</a>
                         <div class="dropdown-menu m-0">
-                            <a href="detail.html" class="dropdown-item">EBSCO</a>
+                            <a href="https://web.s.ebscohost.com/ehost/search/basic?vid=0&sid=421b9c19-dd06-4bdd-988b-e0710e25c372%40redis" class="dropdown-item">EBSCO</a>
                             <a href="feature.html" class="dropdown-item">E-Books</a>
                             <a href="team.html" class="dropdown-item">E-Journals</a>
-                            <a href="testimonial.html" class="dropdown-item">DELNET</a>
+                            <a href="https://discovery1.delnet.in/" class="dropdown-item">DELNET</a>
                         </div>
                     </div>
     
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">IMP Links</a>
                         <div class="dropdown-menu m-0">
-                            <a href="detail.html" class="dropdown-item">NPLEL Videos</a>
+                            <a href="https://ww25.nptelvideos.in/?subid1=20240901-0357-01ba-bc80-fee55f95a80c" class="dropdown-item">NPLEL Videos</a>
                             <a href="feature.html" class="dropdown-item">SWAYAM Online Course</a>
                             <a href="team.html" class="dropdown-item">News Paper Link</a>
                             <a href="testimonial.html" class="dropdown-item">News Paper Clipping</a>
                             <a href="team.html" class="dropdown-item">National Digital Library</a>
                             <a href="testimonial.html" class="dropdown-item">E-PG Pathshala</a>
-                            <a href="testimonial.html" class="dropdown-item">Aptitude Questions</a>
+                            <a href="https://www.indiabix.com/" class="dropdown-item">Aptitude Questions</a>
                             <a href="detail.html" class="dropdown-item">Jobs Links</a> <!-- Simplified by removing nesting -->
                         </div>
                     </div>
@@ -137,14 +137,7 @@
     </div>
     
  <!-- Navbar End -->
-<style>
-    body {
-        font-family: 'Roboto', sans-serif;
-        background-color: #f4f4f9;
-        margin: 0;
-        padding: 0;
-    }
-
+ <style>
     .container {
         width: 80%;
         margin: 40px auto;
@@ -162,134 +155,71 @@
 
     header h1 {
         margin: 0;
-        font-size: 2.5em;
+        font-size: 3.0em;
         color: #007BFF;
         letter-spacing: 3px;
         text-transform: uppercase;
     }
 
-
-    .intro {
-        padding: 25px;
-        text-align: center;
-        font-size: 1.3em;
-        line-height: 1.8;
-        color: #000000;
-    }
-
-    /* Card style for librarian info */
-    .librarian-card {
+    .notice-board {
         display: flex;
-        align-items: center;
-        margin-top: 30px;
-        padding: 25px;
-        background-color: #f9f9f9;
-        border-radius: 15px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 100%;
+        padding: 20px;
     }
+    
+    .notice {
+        width: 100%;
+        max-width: 380px;
+        cursor: default;
 
-    .librarian-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-
-    .librarian-card img {
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 30px;
+    
+    .notice img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
-
-    .librarian-card .info {
-        flex: 1;
-    }
-
-    .librarian-card .info h3 {
-        margin: 0;
-        font-size: 1.8em;
-        color: #007BFF;
-    }
-
-    .librarian-card .info p {
-        margin: 8px 0 0;
-        font-size: 1.2em;
-        color: #000000;
-    }
-
+    
     /* Responsive adjustments */
-    @media (max-width: 768px) {
-        .container {
-            width: 90%;
-            margin: 20px auto;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-        }
-
-        .librarian-card img {
-            width: 110px;
-            height: 110px;
-        }
-    }
-
     @media (max-width: 490px) {
-        .container {
-            width: 95%;
-            margin: 15px auto;
-            padding: 20px;
-        }
-
-        header h1 {
-            font-size: 2em;
-        }
-
-        .librarian-card {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .librarian-card img {
-            margin: 0 0 15px 0;
-        }
-
-        .librarian-card .info h3 {
-            font-size: 1.5em;
-        }
-
-        .librarian-card .info p {
-            font-size: 1.1em;
+        .notice {
+            max-width: 150px;
         }
     }
 </style>
-
 <div class="container">
     <header>
-        <h1>Our Team</h1>
+        <h1>Notice</h1>
         <hr>
     </header>
 
-    <div class="intro">
-        Our library is managed by a team of dedicated professionals who are committed to providing exceptional service. We have a total of 3 staff members: 1 Librarian, 1 Assistant Librarian, and 1 Attendant.
-    </div>
 
-    <div class="librarian-card">
-        <img src="images.jpg" alt="Ranjeet Shinde">
-        <div class="info">
-            <h3>Ranjeet Shinde</h3>
-            <p>Librarian</p>
-        </div>
+<div class="notice-board">
+    <div class="notice">
+        <img src="notice1.jpeg" alt="Notice 1">
     </div>
-
-    <div class="librarian-card">
-        <img src="1579237526197.jpg" alt="Ashvini Chavan">
-        <div class="info">
-            <h3>Ashvini Chavan</h3>
-            <p>Assistant Librarian</p>
-        </div>
+    <div class="notice">
+        <img src="notice2.jpeg" alt="Notice 2">
     </div>
+    <div class="notice">
+        <img src="notice3.jpeg" alt="Notice 3">
+    </div>
+    <div class="notice">
+        <img src="notice4.jpeg" alt="Notice 4">
+    </div>
+    <div class="notice">
+        <img src="notice5.jpeg" alt="Notice 5">
+    </div>
+    <div class="notice">
+        <img src="notice6.jpeg" alt="Notice 6">
+    </div>
+    <!-- Add more notices as needed -->
+</div>
 </div>
 
     
