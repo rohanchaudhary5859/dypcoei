@@ -133,29 +133,6 @@
         </nav>
     </div>
     
-    
-    <script>
-        $(document).ready(function() {
-            $(document).click(function(event) {
-                var clickover = $(event.target);
-                var _opened = $("#navbarCollapse").hasClass("show");
-                if (_opened && !clickover.closest('.navbar').length) {
-                    $("#navbarCollapse").collapse('hide');
-                }
-            });
-    
-            // Ensure the navbar toggles correctly when tapping on the toggler button
-            $(".navbar-toggler").click(function() {
-                var _opened = $("#navbarCollapse").hasClass("show");
-                if (_opened) {
-                    $("#navbarCollapse").collapse('hide');
-                } else {
-                    $("#navbarCollapse").collapse('show');
-                }
-            });
-        });
-    </script>
-    
     <!-- Navbar End -->
 
     <style>
