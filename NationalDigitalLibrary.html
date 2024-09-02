@@ -27,7 +27,6 @@
 </head>
 
 <body>
-
     <div class="fluid-container p-0">
         <nav class="navbar navbar-expand-lg bg-light navbar-bright py-3 py-lg-0 px-lg-5">
             <a href=" index.html" class="navbar-logo ml-lg-3 d-flex align-items-center">
@@ -443,153 +442,128 @@
     
     </script>
         
-    <style>
-        h1 {
-            margin-top: 50px;
-            text-align: center;
-            color: #000000;
-        }
+<style>  
+.ndli-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9; /* Light background for the whole section */
+  display: flex;
+  justify-content: center; /* Center the container */
+  align-items: center;
+}
 
-        table {
-            width: 100%;
-            max-width: 85%;
-            margin: 20px auto;
-            border-collapse: collapse; /* Remove space between cells */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow around the table */
-        }
+.ndli-container {
+  max-width: 800px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px; /* Rounded edges for the container */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for the container */
+  text-align: center;
+  width: 100%;
+}
 
-        th, td {
-            border: 1px solid #ccc; /* Cell borders */
-            padding: 10px; /* Cell padding */
-            text-align: left; /* Text alignment */
-        }
+.ndli-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
 
-        th {
-            background-color: #eee; /* Header background color */
-            color: #000000; /* Header text color */
-        }
+.ndli-divider {
+  width: 150px;
+  height: 5px;
+  background-color: #e74c3c;
+  border: none;
+  margin: 0 auto 20px auto;
+}
 
-        tr:nth-child(even) {
-            background-color: #f9f9f9; /* Zebra effect for even rows */
-        }
+.ndli-description {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
 
-        a {
-            color: #3498db; /* Link color */
-            text-decoration: none; /* No underline */
-        }
+.ndli-image-container {
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  max-width: 100%;
+}
 
-        a:hover {
-            text-decoration: underline; /* Underline on hover */
-        }
+.ndli-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
 
-        @media (max-width: 768px) {
-            table {
-                font-size: 14px; /* Adjust font size for smaller screens */
-            }
+.ndli-link {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
 
-            th, td {
-                padding: 8px; /* Reduce padding */
-            }
-        }
+.ndli-link a {
+  color: #e74c3c;
+  text-decoration: none;
+}
 
-        @media (max-width: 490px) {
-            table {
-                font-size: 12px; /* Further adjust font size for even smaller screens */
-            }
+.ndli-link a:hover {
+  text-decoration: underline;
+}
 
-            th, td {
-                padding: 6px; /* Further reduce padding */
-            }
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ndli-container {
+    padding: 20px;
+  }
 
-            h1 {
-                margin-top: 25px;
-                font-size: 24px; /* Reduce heading size */
-            }
-        }
+  .ndli-title {
+    font-size: 32px;
+  }
 
-        /* Separate section for EBSCO eBooks */
-        .special-section {
-            margin: 40px auto;
-            padding: 20px;
-            max-width: 85%;
-            background-color: #f0f8ff; /* Light blue background */
-            border: 1px solid #ccc; /* Border for the section */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for the section */
-            text-align: center;
-        }
+  .ndli-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
 
-        .special-section h2 {
-            color: #333;
-            font-size: 28px;
-        }
+  .ndli-image-container {
+    padding: 10px;
+  }
 
-        .special-section a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #3498db; /* Button background color */
-            color: #fff;
-            text-decoration: none;
-            border-radius: 4px;
-        }
+  .ndli-image {
+    max-width: 300px;
+  }
+}
 
-        .special-section a:hover {
-            background-color: #2980b9; /* Darker shade on hover */
-        }
-    </style>
-</head>
-<body>
+@media (max-width: 490px) {
+  .ndli-container {
+    padding: 15px;
+  }
 
-    <h1>E-BOOKS</h1>
+  .ndli-title {
+    font-size: 28px;
+  }
 
-    <table>
-        <thead>
-            <tr>
-                <th>S.No</th>
-                <th>Title</th>
-                <th>Link</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>PDF Drive</td>
-                <td><a href="https://www.pdfdrive.com" target="_blank">Click Here</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>BOOK BOON</td>
-                <td><a href="https://www.bookboon.com" target="_blank">Click Here</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Free Tech Book</td>
-                <td><a href="http://www.freetechbooks.com/" target="_blank">Click Here</a></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Ebook4free</td>
-                <td><a href="https://www.ebook4free.com" target="_blank">Click Here</a></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Project Gutenberg</td>
-                <td><a href="https://www.gutenberg.org" target="_blank">Click Here</a></td>
-            </tr>
-        </tbody>
-    </table>
+  .ndli-description {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
 
-    <!-- Separate section for EBSCO eBooks -->
-    <div class="special-section">
-        <h2>EBSCO eBooks</h2>
-        <p>Explore a vast collection of eBooks available through EBSCO.</p>
-        <a href="https://login.ebsco.com/?requestIdentifier=aca6d650-b2a5-4cbe-b85a-6511ddfc1c11&acrValues=uid&ui_locales&redirect_uri=https://logon.ebsco.zone/api/dispatcher/continue/prompted?state=YTdiYWRiM2U0MzJhNDcyYzkxMGZlMjhlMGM4ZGVhZjU=&authRequest=eyJraWQiOiIxNjg2MTQ5MjEzNjMxIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5lYnNjby56b25lXC9hcGlcL2Rpc3BhdGNoZXIiLCJhdXRoUmVxdWVzdCI6eyJncmFudF90eXBlIjoiYXV0aG9yaXphdGlvbl9jb2RlIiwic2NvcGUiOiJvcGVuaWQgZW1haWwgYWZmaWxpYXRpb24iLCJhY3JfdmFsdWVzIjoidWlkIiwicmVzcG9uc2VfdHlwZSI6ImNvZGUiLCJyZWRpcmVjdF91cmkiOiJodHRwczpcL1wvc2VhcmNoLmVic2NvaG9zdC5jb21cL3dlYmF1dGhcL1Byb21wdGVkQ2FsbGJhY2suYXNweCIsInN0YXRlIjoiQTNSSEx4LW5vRVlrQi1lSVRIZTJvR0s2emc3MHNwdlhkUGUxWmNKTWlrdUtJdEszRlpYdERNRlI4SEstMW9ZZ1hELVcyLWltNFlLX2tJSktnM2twdGdRZTlYQV94RHR0STZCblVSbjA1MEE0RDVfZHhFeVpJYTFWVndZTDlCS01Va20yNEVWR0FMb1o2Tnl5ZjVPakJLQnNZVjVqSW1xNC00TmNZMUVkZmxkRC1XeHBFM2w1bDNId2xGRVUwdmt4X3E4WmpNZEtLVGZPZGllWUVhb0xnc1M1UURfMW8wTG5Ka25XVEFZYjNwdHhZcjM1SWJqbTY5SjdvcVE2M1ZpSnc2Wjc0VjJNVXRQZEoxU0RscjRLVGtWdF80X3VzQnVld2Zlb0lEM2I5SzYwMTlSR3NHVkZHc3NyZXFnT040YlVpdjQwZHBwYjJsNVMydjNCcXI4aDZLMXE4RnZjeUxoS1RaMFQ1WlV6TUtzNzJ1ZyIsImNsaWVudF9pZCI6ImF3Z3ljSXg1N01yd25EUTVoNFVlNnlDVkVQMHI1TXQ5IiwicmVzcG9uc2VfbW9kZSI6InF1ZXJ5IiwicmVxSWQiOiJhY2E2ZDY1MC1iMmE1LTRjYmUtYjg1YS02NTExZGRmYzFjMTEifSwiaWF0IjoxNzI1MTY0MDU0LCJqdGkiOiIxY2Y0MDk5Yy1jNjQ1LTQ2ZDktYjI1Yy0yNzFiMDcxZWNjYmUiLCJyZXFJZCI6ImFjYTZkNjUwLWIyYTUtNGNiZS1iODVhLTY1MTFkZGZjMWMxMSJ9.TiXhNUzAhXBra1qV0iyWLg9zodJtR6zTfeC0zmNOrFDMuaGvxHj83HXBIzFcmkMB4ov60jWl8Spj0birj4Dhnv12lJPHbIoSwSl5PkInQ2rWoEed53QQqCZ7U20NNeKjsO0DoY8vdfa7iDc31JmhhV2XXHidN-WUOJ2qZguN0uCxvgpLG82Fj2WO0rK3R24tdMdnzJlS-ZN35INhdq-zjsta224Zv11hsBKEykI9_Hpk2ZobbaPJHY3O3OzO9tBj1xlZ3gSF-1hZvWQkPy7MkwtgUBSxvB1LSeqg2WyV24o_Oj1R5V8ndDSRxP7SYCetj6ka65S2fgUUGj5QUneDHg" target="_blank">Click Here</a>
-    </div>
+  .ndli-image-container {
+    padding: 8px;
+  }
+
+  .ndli-image {
+    max-width: 250px;
+  }
+}
+
+</style>
     <!-- Footer Start -->
-   <!-- Footer Start -->
-   
-<!-- Footer End -->
-
+    
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>

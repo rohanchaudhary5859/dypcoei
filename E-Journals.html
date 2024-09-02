@@ -32,7 +32,6 @@
     <!-- Topbar End -->
 
 
-    <!-- Navbar Start -->
     <div class="fluid-container p-0">
         <nav class="navbar navbar-expand-lg bg-light navbar-bright py-3 py-lg-0 px-lg-5">
             <a href=" index.html" class="navbar-logo ml-lg-3 d-flex align-items-center">
@@ -70,13 +69,30 @@
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">IMP Links</a>
                         <div class="dropdown-menu m-0">
                             <a href="https://ww25.nptelvideos.in/?subid1=20240901-0357-01ba-bc80-fee55f95a80c" class="dropdown-item">NPTEL Videos</a>
-                            <a href="feature.html" class="dropdown-item">SWAYAM Online Course</a>
-                            <a href="team.html" class="dropdown-item">News Paper Link</a>
-                            <a href="testimonial.html" class="dropdown-item">News Paper Clipping</a>
-                            <a href="team.html" class="dropdown-item">National Digital Library</a>
+                            <a href="Swayamonline.html" class="dropdown-item">SWAYAM Online Course</a>
+                            <a href="Newspaperlink.html" class="dropdown-item">News Paper Link</a>
+                            <a href="NewsPaperClipping.html" class="dropdown-item">News Paper Clipping</a>
+                            <a href="NationalDigitalLibrary.html" class="dropdown-item">National Digital Library</a>
                             <a href="testimonial.html" class="dropdown-item">E-PG Pathshala</a>
                             <a href="https://www.indiabix.com/" class="dropdown-item">Aptitude Questions</a>
                             <a href="detail.html" class="dropdown-item">Jobs Links</a>
+                        </div>
+                    </div>
+                    <div class="nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Syllabus</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="https://drive.google.com/file/d/1ooGEf6yvt0jHpk6y5-hzpvDlbwLvkVbS/view" class="dropdown-item">FE 2019</a>
+                            <a href="https://drive.google.com/file/d/1Gkaqhz8nS5h0wYpN-SfkvCrZ865PkRNB/view" class="dropdown-item">SE Computer 2019</a>
+                            <a href="https://drive.google.com/open?id=1KJlHMOLRLo0KuSdEKu_FzcmW8CeGikkU&authuser=0" class="dropdown-item">SE AI & DS 2019</a>
+                            <a href="https://drive.google.com/open?id=17_i1Hf14SJ03-HtIKEoqSxENApcxtAPc&authuser=0" class="dropdown-item">SE Mechanical 2019</a>
+                            <a href="https://drive.google.com/open?id=1Sybi7hz1pNXkZ73na4CFs2Btm1HGXXC8&authuser=0" class="dropdown-item">SE Civil 2019</a>
+                            <a href="https://drive.google.com/open?id=1CoyDEwCPo2UcmM314447yboBXdTYh3sy&authuser=0" class="dropdown-item">TE Computer 2019</a>
+                            <a href="https://drive.google.com/open?id=1MxTn37ZbkISrLuXezdtFONyzEYQNIdQd&authuser=0" class="dropdown-item">TE AI & DS 2019</a>
+                            <a href="https://drive.google.com/open?id=1dltJKz2uuIgIABPrAvucxkpDp3jyzz92&authuser=0" class="dropdown-item">TE Mechanical 2019</a>
+                            <a href="https://drive.google.com/open?id=1TJPN6aa4uxJboXaMeCCps4xG-LkWULGN&authuser=0" class="dropdown-item">TE Civil 2019</a>
+                            <a href="https://drive.google.com/open?id=15oxHTs66o1dMcdWWAo-DFIANlduI_ROf&authuser=0" class="dropdown-item">BE Computer 2019</a>
+                            <a href="https://drive.google.com/open?id=1nusGz1CNZYbU4NFcyV9PaU8GPn6OiFI9&authuser=0" class="dropdown-item">BE Mechanical 2019</a>
+                            <a href="https://drive.google.com/open?id=1W21n9C7yZ1rhDFj8nKrtg6NtqHzdEpei&authuser=0" class="dropdown-item">BE Civil 2019</a>
                         </div>
                     </div>
                     <div class="nav-dropdown">
@@ -96,277 +112,296 @@
                             <a href="feature.html" class="dropdown-item">OPAC 2</a>
                         </div>
                     </div>
+                    
+                  
                 </div>
             </div>
         </nav>
     </div>
     <!-- Navbar End -->
     <style>
-        .fluid-container {
-            width: 100%;
-            max-width: 100%;
-            padding: 0 15px; /* Add padding for small screens */
-        }
-        
-        /* Navbar */
-        .navbar-bright {
+    .fluid-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px; /* Add padding for small screens */
+    }
+    
+    /* Navbar */
+    .navbar-bright {
+        background-color: #f8f9fa;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 1rem; /* Adjusted padding */
+    }
+    
+    .navbar-logo img.logo-image {
+        height: 80px;
+    }
+    
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: .5rem; /* Spacing between nav items */
+        align-items: center;
+    }
+    
+    .nav-link {
+        padding: 0.5rem 0.75rem; /* Adjusted padding */
+        color: #333;
+        text-decoration: none;
+        font-weight: 200;
+        font-size: 0.7rem; /* Font size */
+        transition: color 0.3s ease, background-color 0.3s ease;
+        border-radius: 0.25rem;
+        line-height: 1.5; /* Ensures vertical alignment */
+    }
+    
+    .nav-link:hover,
+    .nav-link.active {
+        color: #0056b3; /* Hover color */
+        background-color: #e3f2fd; /* Hover background */
+        text-decoration: none;
+    }
+    
+    .nav-dropdown {
+        position: relative;
+    }
+    
+    .nav-dropdown .dropdown-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.2rem; /* Space between text and arrow */
+        line-height: 1.5;
+    }
+    
+    .nav-dropdown .dropdown-toggle::after {
+        content: " \25BC"; /* Unicode for a downward arrow */
+        font-size: 0.7rem;
+        transition: transform 0.3s ease-in-out;
+        vertical-align: middle; /* Align arrow vertically */
+    }
+    
+    .nav-dropdown:hover .dropdown-toggle::after {
+        transform: rotate(180deg); /* Arrow rotation on hover */
+    }
+    
+    /* Adjust the styles for the navbar and dropdowns */
+    .nav-dropdown:hover .dropdown-menu {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /* Fix submenu positions on large screens */
+    .nav-dropdown .dropdown-menu {
+        right: auto;
+        left: 0; /* Ensure submenus are aligned correctly */
+        top: 100%;
+        transform: translateY(10px);
+    }
+    
+    /* Ensure submenus stay within the viewport on large screens */
+    .nav-dropdown .dropdown-menu .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-left: 0.1rem;
+        transform: translateY(0);
+    }
+    
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        min-width: 1rem;
+        padding: 0.7rem 0;
+        margin: 0.25rem 0 0;
+        font-size: 0.775rem; /* Font size */
+        color: #212529;
+        text-align: left;
+        background-color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .dropdown-item {
+        padding: 0.5rem 1rem; /* Adjusted padding */
+        color: #333;
+        text-decoration: none;
+        font-weight: 300;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .dropdown-item:hover {
+        background-color: #f1f1f1;
+        color: #0056b3; /* Hover color */
+    }
+    
+    /* Navbar Toggle (for mobile view) */
+    .navbar-toggler {
+        border: none;
+        padding: 0.375rem 0.75rem;
+        border-radius: 1rem  ;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .navbar-toggler:hover {
+        background-color: #ccc;
+    }
+    
+    .navbar-toggler-icon {
+        background-color: #000000;
+        width: 22px;
+        height: 2px;
+        display: block;
+        position: relative;
+    }
+    
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        content: '';
+        background-color: #000000;
+        width: 22px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+    
+    .navbar-toggler-icon::before {
+        top: -6px;
+    }
+    
+    .navbar-toggler-icon::after {
+        bottom: -6px;
+    }
+    
+    /* Toggle Collapse */
+    .collapse {
+        display: none;
+    }
+    
+    .collapse.show {
+        display: block;
+    }
+    
+    /* Responsive Behavior */
+    @media (max-width: 992px) {
+        .navbar-collapse {
+            flex-direction: column;
+            align-items: flex-start;
             background-color: #f8f9fa;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 0.5rem 1rem; /* Adjusted padding */
+            padding: 1rem;
+            border-top: 1px solid #ddd;
         }
-        
-        .navbar-logo img.logo-image {
-            height: 80px;
-        }
-        
+    
         .navbar-nav {
-            display: flex;
-            flex-direction: row;
-            list-style: none;
-            gap: 1rem; /* Spacing between nav items */
-            align-items: center;
+            flex-direction: column;
+            width: 100%;
         }
-        
+    
         .nav-link {
-            padding: 0.5rem 0.75rem; /* Adjusted padding */
-            color: #333;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.8rem; /* Font size */
-            transition: color 0.3s ease, background-color 0.3s ease;
-            border-radius: 0.25rem;
-            line-height: 1.5; /* Ensures vertical alignment */
+            padding: 0.75rem 0;
+            width: 100%;
         }
-        
-        .nav-link:hover,
-        .nav-link.active {
-            color: #0056b3; /* Hover color */
-            background-color: #e3f2fd; /* Hover background */
-            text-decoration: none;
-        }
-        
+    
         .nav-dropdown {
-            position: relative;
+            width: 100%;
         }
-        
-        .nav-dropdown .dropdown-toggle {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.3rem; /* Space between text and arrow */
-            line-height: 1.5;
-        }
-        
-        .nav-dropdown .dropdown-toggle::after {
-            content: " \25BC"; /* Unicode for a downward arrow */
-            font-size: 0.8rem;
-            transition: transform 0.3s ease-in-out;
-            vertical-align: middle; /* Align arrow vertically */
-        }
-        
-        .nav-dropdown:hover .dropdown-toggle::after {
-            transform: rotate(180deg); /* Arrow rotation on hover */
-        }
-        
-        .dropdown-menu {
+    
+        .nav-dropdown .dropdown-menu {
+            position: static;
             display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            z-index: 1000;
-            min-width: 12rem;
-            padding: 0.5rem 0;
-            margin: 0.25rem 0 0;
-            font-size: 0.875rem; /* Font size */
-            color: #212529;
-            text-align: left;
-            background-color: #fff;
+            width: 100%;
             border: none;
-            border-radius: 0.5rem;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            transform: translateY(-10px);
-            transition: opacity 0.3s ease, transform 0.3s ease;
+            box-shadow: none;
+            background-color: #f8f9fa;
         }
-        
+    
         .nav-dropdown:hover .dropdown-menu {
             display: block;
-            opacity: 1;
-            transform: translateY(0);
         }
-        
-        .dropdown-item {
-            padding: 0.5rem 1rem; /* Adjusted padding */
-            color: #333;
-            text-decoration: none;
-            font-weight: 400;
-            transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    @media (max-width: 768px) {
+        .navbar-bright {
+            padding: 0.5rem 1rem;
         }
-        
-        .dropdown-item:hover {
-            background-color: #f1f1f1;
-            color: #0056b3; /* Hover color */
+    
+        .navbar-nav {
+            align-items: flex-start;
         }
-        
-        /* Navbar Toggle (for mobile view) */
-        .navbar-toggler {
-            border: none;
-            background-color: #ddd;
-            padding: 0.375rem 0.75rem;
-            border-radius: 0.25rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+    
+        .navbar-collapse.show {
+            padding: 0.5rem 1rem;
+            width: 100%;
         }
-        
-        .navbar-toggler:hover {
-            background-color: #ccc;
-        }
-        
+    
         .navbar-toggler-icon {
-            background-color: #333;
-            width: 22px;
-            height: 2px;
-            display: block;
-            position: relative;
+            width: 18px;
         }
-        
+    
         .navbar-toggler-icon::before,
         .navbar-toggler-icon::after {
-            content: '';
-            background-color: #333;
-            width: 22px;
-            height: 2px;
-            display: block;
-            position: absolute;
-            left: 0;
+            width: 18px;
         }
-        
-        .navbar-toggler-icon::before {
-            top: -6px;
+    
+        .nav-dropdown .dropdown-toggle::after {
+            cursor: pointer;
         }
-        
-        .navbar-toggler-icon::after {
-            bottom: -6px;
-        }
-        
-        /* Toggle Collapse */
-        .collapse {
+    
+        .nav-dropdown .dropdown-toggle:active + .dropdown-menu {
             display: none;
         }
-        
-        .collapse.show {
-            display: block;
+    }
+    
+    @media (max-width: 490px) {
+        .navbar-bright {
+            padding: 0.25rem 0.5rem; /* Further reduced padding */
         }
-        
-        /* Responsive Behavior */
-        @media (max-width: 992px) {
-            .navbar-collapse {
-                flex-direction: column;
-                align-items: flex-start;
-                background-color: #f8f9fa;
-                padding: 1rem;
-                border-top: 1px solid #ddd;
-            }
-        
-            .navbar-nav {
-                flex-direction: column;
-                width: 100%;
-            }
-        
-            .nav-link {
-                padding: 0.75rem 0;
-                width: 100%;
-            }
-        
-            .nav-dropdown {
-                width: 100%;
-            }
-        
-            .nav-dropdown .dropdown-menu {
-                position: static;
-                display: none;
-                width: 100%;
-                border: none;
-                box-shadow: none;
-                background-color: #f8f9fa;
-            }
-        
-            .nav-dropdown:hover .dropdown-menu {
-                display: block;
-            }
+    
+        .nav-link {
+            font-size: 0.90rem; /* Adjust font size */
+            padding: 0.5rem 0.5rem; /* Reduce padding for small screens */
         }
-        
-        @media (max-width: 768px) {
-            .navbar-bright {
-                padding: 0.5rem 1rem;
-            }
-        
-            .navbar-nav {
-                align-items: flex-start;
-            }
-        
-            .navbar-collapse.show {
-                padding: 0.5rem 1rem;
-                width: 100%;
-            }
-        
-            .navbar-toggler-icon {
-                width: 18px;
-            }
-        
-            .navbar-toggler-icon::before,
-            .navbar-toggler-icon::after {
-                width: 18px;
-            }
-        
-            .nav-dropdown .dropdown-toggle::after {
-                cursor: pointer;
-            }
-        
-            .nav-dropdown .dropdown-toggle:active + .dropdown-menu {
-                display: none;
-            }
+    
+        .dropdown-item {
+            padding: 0.5rem 0.75rem; /* Reduced padding for dropdown items */
+            font-size: 0.85rem; /* Smaller font size */
         }
-        
-        @media (max-width: 490px) {
-            .navbar-bright {
-                padding: 0.25rem 0.5rem; /* Further reduced padding */
-            }
-        
-            .nav-link {
-                font-size: 0.85rem; /* Adjust font size */
-                padding: 0.5rem 0.5rem; /* Reduce padding for small screens */
-            }
-        
-            .dropdown-item {
-                padding: 0.5rem 0.75rem; /* Reduced padding for dropdown items */
-                font-size: 0.85rem; /* Smaller font size */
-            }
-        
-            .navbar-nav {
-                gap: 0.75rem; /* Reduce gap between nav items */
-            }
-        
-            .navbar-toggler-icon {
-                width: 16px;
-            }
-        
-            .navbar-toggler-icon::before,
-            .navbar-toggler-icon::after {
-                width: 16px;
-            }
-        
-            .fluid-container {
-                padding: 0 10px; /* Further reduce padding */
-            }
-        
-            .navbar-logo img.logo-image {
-                height: 40px; /* Reduce logo size for small screens */
-            }
+    
+        .navbar-nav {
+            gap: 0.50rem; /* Reduce gap between nav items */
         }
-        
-        </style>
+    
+        .navbar-toggler-icon {
+            width: 16px;
+        }
+    
+        .navbar-toggler-icon::before,
+        .navbar-toggler-icon::after {
+            width: 16px;
+        }
+    
+        .fluid-container {
+            padding: 10px 10px; /* Further reduce padding */
+        }
+    
+        .navbar-logo img.logo-image {
+            height: 80px;
+            /* Reduce logo size for small screens */
+        }
+    }
+    
+    </style>
     <script>
-        // Close navbar when clicking outside
+    // Close navbar when clicking outside
     document.addEventListener('click', function (e) {
         var navbarCollapse = document.querySelector('.navbar-collapse');
         var collapseBackground = document.querySelector('.collapse-background');
@@ -378,15 +413,40 @@
         }
     });
     
-    // Close submenu on arrow click
+    // Toggle submenu on arrow click, and ensure only one submenu is open at a time
     document.querySelectorAll('.nav-dropdown .dropdown-toggle').forEach(function (dropdown) {
-        dropdown.addEventListener('click', function () {
+        dropdown.addEventListener('click', function (e) {
+            e.stopPropagation();  // Prevent click event from bubbling up to the document
+    
             var dropdownMenu = this.nextElementSibling;
-            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+            var isVisible = dropdownMenu.style.display === 'block';
+    
+            // Close all submenus
+            document.querySelectorAll('.nav-dropdown .dropdown-menu').forEach(function (submenu) {
+                submenu.style.display = 'none';
+            });
+    
+            // Toggle the clicked submenu
+            if (!isVisible) {
+                dropdownMenu.style.display = 'block';
+            } else {
+                dropdownMenu.style.display = 'none';
+            }
         });
     });
     
+    // Close any open submenu if clicking outside
+    document.addEventListener('click', function (e) {
+        if (!e.target.closest('.nav-dropdown')) {
+            document.querySelectorAll('.nav-dropdown .dropdown-menu').forEach(function (submenu) {
+                submenu.style.display = 'none';
+            });
+        }
+    });
+    
+    
     </script>
+        
     <style>
         body {
             font-family: Arial, sans-serif;
