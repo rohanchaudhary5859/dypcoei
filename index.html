@@ -123,43 +123,55 @@
 .fluid-container {
     width: 100%;
     max-width: 100%;
-    padding: 0 15px; /* Add padding for small screens */
+    padding: 0 15px;
 }
 
 /* Navbar */
 .navbar-bright {
     background-color: #f8f9fa;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem 1rem; /* Adjusted padding */
+    padding: 0.5rem 1rem; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align content to space between */
+}
+
+.navbar-logo {
+   height: auto;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   max-width: 100%;
 }
 
 .navbar-logo img.logo-image {
     height: 80px;
+    margin-left: 10px; /* Adjust the margin as needed */
 }
 
 .navbar-nav {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: .70rem; /* Spacing between nav items */
+    gap: 0.70rem;
     align-items: center;
+    margin-left: auto; /* Pushes nav items to the right */
 }
 
 .nav-link {
-    padding: 0.5rem 0.75rem; /* Adjusted padding */
+    padding: 0.5rem 0.75rem;
     color: #333;
     text-decoration: none;
     font-weight: 200;
-    font-size: 0.8rem; /* Font size */
+    font-size: 0.8rem;
     transition: color 0.3s ease, background-color 0.3s ease;
     border-radius: 0.25rem;
-    line-height: 1.5; /* Ensures vertical alignment */
+    line-height: 1.5;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: #0056b3; /* Hover color */
-    background-color: #e3f2fd; /* Hover background */
+    color: #0056b3;
+    background-color: #e3f2fd;
     text-decoration: none;
 }
 
@@ -170,37 +182,34 @@
 .nav-dropdown .dropdown-toggle {
     display: inline-flex;
     align-items: center;
-    gap: 0.2rem; /* Space between text and arrow */
+    gap: 0.2rem;
     line-height: 1.5;
 }
 
 .nav-dropdown .dropdown-toggle::after {
-    content: " \25BC"; /* Unicode for a downward arrow */
+    content: " \25BC";
     font-size: 0.8rem;
     transition: transform 0.3s ease-in-out;
-    vertical-align: middle; /* Align arrow vertically */
+    vertical-align: middle;
 }
 
 .nav-dropdown:hover .dropdown-toggle::after {
-    transform: rotate(180deg); /* Arrow rotation on hover */
+    transform: rotate(180deg);
 }
 
-/* Adjust the styles for the navbar and dropdowns */
 .nav-dropdown:hover .dropdown-menu {
     display: block;
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Fix submenu positions on large screens */
 .nav-dropdown .dropdown-menu {
     right: auto;
-    left: 0; /* Ensure submenus are aligned correctly */
+    left: 0;
     top: 100%;
     transform: translateY(10px);
 }
 
-/* Ensure submenus stay within the viewport on large screens */
 .nav-dropdown .dropdown-menu .dropdown-menu {
     top: 0;
     left: 100%;
@@ -215,10 +224,10 @@
     left: 0;
     z-index: 1000;
     min-width: 1.5rem;
-    font-size: .80rem;
+    font-size: 0.80rem;
     padding: 0.7rem 0;
     margin: 0.5rem 0 0;
-    font-size: 0.775rem; /* Font size */
+    font-size: 0.775rem;
     color: #000000;
     text-align: left;
     background-color: #fff;
@@ -231,7 +240,7 @@
 }
 
 .dropdown-item {
-    padding: 0.5rem 1rem; /* Adjusted padding */
+    padding: 0.5rem 1rem;
     color: #333;
     text-decoration: none;
     font-weight: 500;
@@ -240,14 +249,14 @@
 
 .dropdown-item:hover {
     background-color: #ededed;
-    color: #0b7ffb; /* Hover color */
+    color: #0b7ffb;
 }
 
 /* Navbar Toggle (for mobile view) */
 .navbar-toggler {
     border: none;
     padding: 0.80rem 0.75rem;
-    border-radius: 3rem  ;
+    border-radius: 3rem;
     margin-right: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -365,25 +374,24 @@
 
 @media (max-width: 490px) {
     .navbar-bright {
-        padding: 0.25rem 0.5rem; /* Further reduced padding */
+        padding: 0.25rem 0.5rem;
     }
 
     .nav-link {
-        font-size: 0.95rem; /* Adjust font size */
-        padding: 0.5rem 0.5rem; /* Reduce padding for small screens */
+        font-size: 0.95rem;
+        padding: 0.5rem 0.5rem;
     }
 
     .dropdown-item {
-        padding: 0.5rem 0.75rem; /* Reduced padding for dropdown items */
-        font-size: 0.90rem; /* Smaller font size */
+        padding: 0.5rem 0.75rem;
+        font-size: 0.90rem;
     }
 
     .navbar-nav {
-        gap: 0.50rem; /* Reduce gap between nav items */
+        gap: 0.50rem;
     }
 
     .navbar-toggler-icon {
-        
         width: 16px;
     }
 
@@ -393,13 +401,12 @@
     }
 
     .fluid-container {
-        padding: 10px 10px; /* Further reduce padding */
+        padding: 10px 10px;
     }
 
     .navbar-logo img.logo-image {
-        margin-left: 35px;
-        height: 70px;
-        /* Reduce logo size for small screens */
+        margin-left: 0; /* Align logo directly with container */
+        height: 70px; /* Reduce logo size for small screens */
     }
 }
 
@@ -513,9 +520,9 @@ document.addEventListener('click', function (e) {
     
         @media (max-width: 490px) {
             .hero-section {
-                height: 27vh; /* Slightly reduce height for smaller screens */
+                height: 30vh; /* Slightly reduce height for smaller screens */
                 justify-content: flex-start; /* Align content to the top */
-                padding-top: 10px; /* Adjust the top padding */
+                padding-top: 35px; /* Adjust the top padding */
             }
             .slide {
                 background-size: contain;
@@ -527,7 +534,7 @@ document.addEventListener('click', function (e) {
     </head>
     <body>
         <!-- Header Start -->
-        <div class="hero-section position-relative overlay-bottom custom-slide" style="margin-bottom: 100px;">
+        <div class="hero-section position-relative overlay-bottom custom-slide" style="margin-top: 20px;">
             <div class="background-slider" id="backgroundSlider">
                 <div class="slide" style="background-image: url('Faculty-of-FE-With-Principal-Head-of-FE.png');"></div>
                 <div class="slide" style="background-image: url('DYPCOEI-About-Us-1024x419.jpg');"></div>
@@ -560,6 +567,7 @@ document.addEventListener('click', function (e) {
     <!-- About Start -->
     <style>
         .library-section {
+            margin-top: 40px;
             background-color: #f8f9fa;
             padding: 50px 0;
         }
