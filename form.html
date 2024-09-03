@@ -33,6 +33,7 @@
             <a href=" index.html" class="navbar-logo ml-lg-3 d-flex align-items-center">
                 <img src="img/logo.png" alt="DYPCOEI LIBRARY Logo" class="logo-image mr-2">
             </a>
+         
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -69,9 +70,9 @@
                             <a href="Newspaperlink.html" class="dropdown-item">News Paper Link</a>
                             <a href="NewsPaperClipping.html" class="dropdown-item">News Paper Clipping</a>
                             <a href="NationalDigitalLibrary.html" class="dropdown-item">National Digital Library</a>
-                            <a href="testimonial.html" class="dropdown-item">E-PG Pathshala</a>
+                            <a href="E-pg.html" class="dropdown-item">E-PG Pathshala</a>
                             <a href="https://www.indiabix.com/" class="dropdown-item">Aptitude Questions</a>
-                            <a href="detail.html" class="dropdown-item">Jobs Links</a>
+                            <a href="jobsLinks.html" class="dropdown-item">Jobs Links</a>
                         </div>
                     </div>
                     <div class="nav-dropdown">
@@ -94,18 +95,19 @@
                     <div class="nav-dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Institutional Repository</a>
                         <div class="dropdown-menu m-0">
-                            <a href="detail.html" class="dropdown-item">Photos</a>
-                            <a href="feature.html" class="dropdown-item">Our Features</a>
-                            <a href="team.html" class="dropdown-item">NCTEP19</a>
-                            <a href="testimonial.html" class="dropdown-item">College Magazine</a>
-                            <a href="detail.html" class="dropdown-item">BE Project</a>
+                            <a href="photos.html" class="dropdown-item">Photos</a>
+                            <a href="E-BULLETIN.html" class="dropdown-item">E-BULLETIN</a>
+                            <a href="https://drive.google.com/drive/folders/1cLLnyDjFKUuGIux-pdLPjHVy89HpP-pQ" class="dropdown-item">NCTEP19</a>
+                            <a href="https://drive.google.com/file/d/0B6xQs8x-EdRAOEJQa2w4aWl2akVJSUNydElLTUlNZXNQZlFR/view?resourcekey=0-4a0J1zoTmBDAyAy1vKRkhg" class="dropdown-item">College Magazine</a>
+                            <a href="BEproject.html" class="dropdown-item">BE Project</a>
+                            <a href="QuestionPaper.html" class="dropdown-item">Question Paper</a>
                         </div>
                     </div>
                     <div class="nav-dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">OPAC</a>
                         <div class="dropdown-menu m-0">
-                            <a href="detail.html" class="dropdown-item">OPAC 1</a>
-                            <a href="feature.html" class="dropdown-item">OPAC 2</a>
+                            <a href="http://192.168.64.43:9000/" class="dropdown-item">OPAC-1</a>
+                            <a href="http://103.68.11.122:9000" class="dropdown-item">OPAC-2</a>
                         </div>
                     </div>
                     
@@ -137,7 +139,7 @@
         display: flex;
         flex-direction: row;
         list-style: none;
-        gap: .5rem; /* Spacing between nav items */
+        gap: .70rem; /* Spacing between nav items */
         align-items: center;
     }
     
@@ -146,7 +148,7 @@
         color: #333;
         text-decoration: none;
         font-weight: 200;
-        font-size: 0.7rem; /* Font size */
+        font-size: 0.8rem; /* Font size */
         transition: color 0.3s ease, background-color 0.3s ease;
         border-radius: 0.25rem;
         line-height: 1.5; /* Ensures vertical alignment */
@@ -172,7 +174,7 @@
     
     .nav-dropdown .dropdown-toggle::after {
         content: " \25BC"; /* Unicode for a downward arrow */
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         transition: transform 0.3s ease-in-out;
         vertical-align: middle; /* Align arrow vertically */
     }
@@ -207,19 +209,20 @@
     .dropdown-menu {
         display: none;
         position: absolute;
-        top: 100%;
+        top: 90%;
         left: 0;
         z-index: 1000;
-        min-width: 1rem;
+        min-width: 1.5rem;
+        font-size: .80rem;
         padding: 0.7rem 0;
-        margin: 0.25rem 0 0;
+        margin: 0.5rem 0 0;
         font-size: 0.775rem; /* Font size */
-        color: #212529;
+        color: #000000;
         text-align: left;
         background-color: #fff;
         border: none;
-        border-radius: 0.5rem;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 1.0rem;
+        box-shadow: 0 8px 16px rgba(5, 33, 156, .1);
         opacity: 0;
         transform: translateY(-10px);
         transition: opacity 0.3s ease, transform 0.3s ease;
@@ -229,26 +232,27 @@
         padding: 0.5rem 1rem; /* Adjusted padding */
         color: #333;
         text-decoration: none;
-        font-weight: 300;
+        font-weight: 500;
         transition: background-color 0.3s ease, color 0.3s ease;
     }
     
     .dropdown-item:hover {
-        background-color: #f1f1f1;
-        color: #0056b3; /* Hover color */
+        background-color: #ededed;
+        color: #0b7ffb; /* Hover color */
     }
     
     /* Navbar Toggle (for mobile view) */
     .navbar-toggler {
         border: none;
-        padding: 0.375rem 0.75rem;
-        border-radius: 1rem  ;
+        padding: 0.80rem 0.75rem;
+        border-radius: 3rem  ;
+        margin-right: 20px;
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
     
     .navbar-toggler:hover {
-        background-color: #ccc;
+        background-color: #ffffff;
     }
     
     .navbar-toggler-icon {
@@ -363,13 +367,13 @@
         }
     
         .nav-link {
-            font-size: 0.90rem; /* Adjust font size */
+            font-size: 0.95rem; /* Adjust font size */
             padding: 0.5rem 0.5rem; /* Reduce padding for small screens */
         }
     
         .dropdown-item {
             padding: 0.5rem 0.75rem; /* Reduced padding for dropdown items */
-            font-size: 0.85rem; /* Smaller font size */
+            font-size: 0.90rem; /* Smaller font size */
         }
     
         .navbar-nav {
@@ -377,6 +381,7 @@
         }
     
         .navbar-toggler-icon {
+            
             width: 16px;
         }
     
@@ -390,7 +395,8 @@
         }
     
         .navbar-logo img.logo-image {
-            height: 80px;
+            margin-left: 35px;
+            height: 70px;
             /* Reduce logo size for small screens */
         }
     }
@@ -398,11 +404,24 @@
     </style>
     <script>
     // Close navbar when clicking outside
+    // Toggle navbar menu on clicking the toggle button
+    document.querySelector('.navbar-toggler').addEventListener('click', function (e) {
+        e.stopPropagation(); // Prevent the click from bubbling up to the document
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+        var collapseBackground = document.querySelector('.collapse-background');
+    
+        // Directly toggle the show class and background display
+        navbarCollapse.classList.toggle('show');
+        collapseBackground.style.display = navbarCollapse.classList.contains('show') ? 'block' : 'none';
+    });
+    
+    // Close the navbar if clicking outside of it
     document.addEventListener('click', function (e) {
         var navbarCollapse = document.querySelector('.navbar-collapse');
         var collapseBackground = document.querySelector('.collapse-background');
         var target = e.target;
     
+        // Close the navbar only if it's open and the click is outside
         if (navbarCollapse.classList.contains('show') && !navbarCollapse.contains(target) && !target.closest('.navbar-toggler')) {
             navbarCollapse.classList.remove('show');
             collapseBackground.style.display = 'none';
@@ -412,7 +431,7 @@
     // Toggle submenu on arrow click, and ensure only one submenu is open at a time
     document.querySelectorAll('.nav-dropdown .dropdown-toggle').forEach(function (dropdown) {
         dropdown.addEventListener('click', function (e) {
-            e.stopPropagation();  // Prevent click event from bubbling up to the document
+            e.stopPropagation(); // Prevent click event from bubbling up to the document
     
             var dropdownMenu = this.nextElementSibling;
             var isVisible = dropdownMenu.style.display === 'block';
@@ -440,9 +459,7 @@
         }
     });
     
-    
     </script>
-        
     
    <style>
    h1 {

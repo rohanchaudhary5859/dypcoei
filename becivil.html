@@ -459,197 +459,278 @@
     });
     
     </script>
-        
-    
-    <!-- Navbar End -->
+ <style>
+  
+  h1 {
+    text-align: center;
+    color: #00d5ff;
+    margin-bottom: 20px;
+}
 
-    <style>
-        .container {
-            width: 85%;
-            margin: 40px auto;
-            background-color: #fff; /* White background */
-            padding: 25px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
-            border-radius: 10px;
-        }
-    
-        header {
-            text-align: center;
-            background-color: #007BFF; /* Slightly darker blue header background */
-            color: #fff; /* White text */
-            padding: 25px;
-            border-radius: 10px 10px 0 0;
-        }
-    
-        header h1 {
-            margin: 0;
-            font-size: 2.8em;
-            color: white;
-            letter-spacing: 1px; /* Slight spacing for letters */
-            font-weight: 700; /* Bold font */
-        }
-    
-        .intro {
-            padding: 20px;
-            background-color: #f1f3f5; /* Softer light grey background for the intro section */
-            border-radius: 8px;
-            margin-top: 20px;
-            text-align: justify;
-            font-size: 1.2em;
-            line-height: 1.6; /* Increased line height for readability */
-        }
-    
-        .committee-list {
-            margin-top: 35px;
-        }
-    
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-    
-        table th, table td {
-            padding: 18px;
-            text-align: left;
-            border-bottom: 2px solid #dee2e6; /* Thicker border for distinction */
-        }
-    
-        table th {
-            background-color: #007BFF; /* Matching header blue background for table */
-            color: #fff; /* White text */
-            text-transform: uppercase;
-            font-size: 1.1em;
-            letter-spacing: 0.5px; /* Slight spacing for letters */
-        }
-    
-        table tr:hover {
-            background-color: #f8f9fa; /* Highlight row on hover with a softer background */
-            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-        }
-    
-        table tr:last-child td {
-            border-bottom: none;
-        }
-    
-        table td {
-            color: #2f2e2e; /* Slightly lighter text color for table cells */
-        }
-    
-        /* Adjustments for tablets and below */
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
-                margin: 20px auto;
-            }
-    
-            header h1 {
-                font-size: 2.2em;
-            }
-    
-            table th, table td {
-                padding: 12px;
-                font-size: 0.9em; /* Slightly smaller font for table on mobile */
-            }
-        }
-    
-        /* Further adjustments for smaller screens (490px and below) */
-        @media (max-width: 490px) {
-            .container {
-                width: 95%;
-                margin: 15px auto;
-                padding: 15px;
-            }
-    
-            header {
-                padding: 15px;
-            }
-    
-            header h1 {
-                font-size: 1.8em;
-            }
-    
-            .intro {
-                padding: 15px;
-                font-size: 1em;
-            }
-    
-            table th, table td {
-                padding: 10px;
-                font-size: 0.85em; /* Smaller font for table on small screens */
-            }
-    
-            table th {
-                font-size: 1em;
-            }
-        }
-    </style>
-   
-        <div class="container">
-            <header>
-                <h1>Library Advisory Committee</h1>
-            </header>
-            
-            <section class="intro">
-                <p>The College has a Library Advisory Committee consisting of senior faculty members, which is advisory in nature. It meets once every term to decide on the further program and policies of the Library.</p>
-            </section>
-            
-            <section class="committee-list">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Sr. No</th>
-                            <th>Name of the Committee Member</th>
-                            <th>Designation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Dr. Suresh N Mali</td>
-                            <td>Principal</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Mr. Laxmikant Malphedwar</td>
-                            <td>Chairperson</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Ms. Pratiksha Patil</td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Mrs. Anita Shinkar</td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Mr. A.P. Chandgude</td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Mrs. Asmita Mali</td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>Mrs. Ashvini Chavan (Asst. Librarian)</td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>Mr. Ranjeet Shinde (Librarian)</td>
-                            <td>Member Secretary</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </div>
-   
-    
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.project-table th, .project-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.project-table th {
+    background-color: #00d5ff;
+    color: white;
+}
+
+.project-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.project-table tr:hover {
+    background-color: #ddd;
+}
+
+.click-here {
+    color: #f71900;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.click-here:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-table th, .project-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 490px) {
+    .project-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .project-table th, .project-table td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .project-table th, .project-table td {
+        white-space: nowrap;
+    }
+}
+
+</style>
+
+
+<h1>BE Civil</h1>
+
+<table class="project-table">
+    <thead>
+        <tr>
+            <th>Group No</th>
+            <th>Project Title</th>
+            <th>Name of the Group Members</th>
+            <th>Guide</th>
+            <th>Details about Project</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>13</td>
+            <td>Seismic Analysis of Residential Building using STAAD Pro</td>
+            <td>BANGAR SHARAD SADASHIV, MOMIN YUSUF NASIR HUSSAIN, RAUT SIDDHI MANGESH, SONAWANE NIKHIL DILIP</td>
+            <td>Name: Prof. Sudharshan K. Kulkarni<br>Qualification: M.Tech Structural Engineering<br>Guide Contact Details:<br>Email ID: koolsudarshan1008@gmail.com<br>Mobile No.: 9980217036</td>
+            <td><a href="https://drive.google.com/file/d/1HFHU7lDt8TYtW3e95TOzUf0eYbNbS1O2/view" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Feasibility Study of Composite Slab Material embedded with LDPE Bubbles</td>
+            <td>DEWARSHI AMIT MARUTI, AJAY PANDHARINATH PATIL, PATIL OMKAR RAGHUNATH, SURWASE RANJEET KUMAR</td>
+            <td>Name: Prof. Sandesh S. Patil<br>Qualification: M.E. Building Science & Technology<br>Guide Contact Details:<br>Email ID: hod_civil@dypatilef.com<br>Mobile No.: 9730993086/7588519787</td>
+            <td><a href="https://drive.google.com/file/d/1JnISw6KKln22a2CEKdQrb-iOpXyCfN8q/view" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Experimental Analysis on use of Polypropylene in Concrete</td>
+            <td>RUDRAWAR AJINKYA AJAY, SHINDE ARVIND GOVIND, SATPUTE SANGRAM SUDHAKARRAO, NEHETE SHUBHAM RAJENDRA</td>
+            <td>Name: Prof. Yogesh D. Nagvekar<br>Qualification: M.Tech CAD Structures<br>Guide Contact Details:<br>Email ID: yogesh.d.nagvekar@gmail.com<br>Mobile No.: 9970054535</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Study of Smart Permeable Pavement</td>
+            <td>HEDAU VRUSHABH DHANRAJ, MANTHAN S WAGHDHARE, AUTADE DNYANESHWAR JAGANNATH, KANADE SAIRAJ SUDHAKAR</td>
+            <td>Name: Prof. Ashutosh P. Chandgude<br>Qualification: M.E. Construction & Management<br>Guide Contact Details:<br>Email ID: ashutosh.chandgude@dypatilef.com<br>Mobile No.: 8087126033</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Analysis of Waste Water in Structural Concrete</td>
+            <td>BORHADE RUCHITA ANIL, TANKSALE SHWETA SUHAS, MHANAWAR MONALI DATTATRAY, TAMKE YOGESH SUERSH</td>
+            <td>Name: Prof. Pooja Kirange<br>Qualification: M.E. Construction Technology & Management<br>Guide Contact Details:<br>Email ID: poojakirange.pk@gmail.com<br>Mobile No.: 7768852540</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Torsional Effect on RCC Building with and without Shear Walls</td>
+            <td>GOUNDI INAM UL HUSSAIN A JABBAR, SHAIKH NAWAZ FARUKH, PATHAN MURAD RASHID, SHAIKH MUJAFFAR BARKAT</td>
+            <td>Name: Prof. Darshan Narasgouda<br>Qualification: M.Tech Structural Engineering<br>Guide Contact Details:<br>Email ID: dnarasagouda3@gamil.com<br>Mobile No.: 8951530091</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Sustainable Grey Water Treatment System</td>
+            <td>PATIL ANIKET SHASHIKANT, WAGHELA RAVI KANTI, MOHAPE AKSHAY CHINTAMAN, MORE NIKHIL VITHOBA</td>
+            <td>Name: Prof. Debashree Majumdar<br>Qualification: M.E. Environmental Engineering<br>Guide Contact Details:<br>Email ID: smajumder1956@gmail.com<br>Mobile No.: 9762648802</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Domestic Waste Water Treatment using Corn Cobs</td>
+            <td>MUTTEPWAR AKASH SANJAY, JABDE TIRUPATI MADHAVRAO, MUNJE VAIBHAV RAJU, NAIKWADE DNYANESHWAR SANJAY</td>
+            <td>Name: Prof. Debashree Majumdar<br>Qualification: M.E. Environmental Engineering<br>Guide Contact Details:<br>Email ID: smajumder1956@gmail.com<br>Mobile No.: 9762648802</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Design and Analysis of Retaining Wall using CSI & Bentley Tools</td>
+            <td>BHADKUMBE AKASH CHANDRAKANT, PATIL SHRIDHAR MARUTI, PADULE JAYSHREE JALINDHAR, KANNAMWAR PREETI VILAS</td>
+            <td>Name: Prof. Vishal S. Chougule<br>Qualification: M.Tech Structural Engineering<br>Guide Contact Details:<br>Email ID: vishalchaugule13@gmail.com<br>Mobile No.: 7972538634</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Hybrid Concrete</td>
+            <td>UNDE UTKARSH KISHOR, DESHMUKH SHREYASH VIKASRAO, PATIL KISHOR RAJENDRA, FALAK MANISH NANDU</td>
+            <td>Name: Prof. Yogesh D. Nagvekar<br>Qualification: M.Tech CAD Structures<br>Guide Contact Details:<br>Email ID: yogesh.d.nagvekar@gmail.com<br>Mobile No.: 9970054535</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Solution on Traffic and Multilevel Parking System</td>
+            <td>ANURAG SANTOSH MARATHE, YOGESH BALWANTRAO JADHAV, PATIL RUSHIKESH SHIVRAJ, UTGE SHUBHAM RATNADEEP</td>
+            <td>Name: Prof. Darshan Narasgouda<br>Qualification: M.Tech Structural Engineering<br>Guide Contact Details:<br>Email ID: dnarasagouda3@gamil.com<br>Mobile No.: 8951530091</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Traffic Noise Analysis for PCMC</td>
+            <td>KSHIRSAGAR VIJAY SUDHAKAR, JADHAV SAVITA GAJANAN, SHIKOKAR PUSHPA RAJU, LANDAGE NIKHIL VINODRAO</td>
+            <td>Name: Prof. Sandesh S. Patil<br>Qualification: M.E. Building Science & Technology<br>Guide Contact Details:<br>Email ID: hod_civil@dypatilef.com<br>Mobile No.: 9730993086/7588519787</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Feasibility Study of Low Cost Water Filter using Herbal Techniques</td>
+            <td>PRASHANT SHANTARAM CHIGLE, BHAGAT AKSHAY SHASHIKANT, GHUMARE SANTOSH BHAUSAHEB</td>
+            <td>Name: Prof. Rajani Kulgude<br>Qualification: M.E. Environmental Engineering<br>Guide Contact Details:<br>Email ID: rajani.kulgude@dypatilef.com<br>Mobile No.: 9960100305</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>Comparative Study of Land Acquisition Process with Advanced Countries</td>
+            <td>SHEWALE SHUBHAM ASHOK, PENDKE SHREYASH KALPESH, GADILOHAR VIVEK PRADIP, GHARE SHIVANI SATISH</td>
+            <td>Name: Prof. Sudharshan K. Kulkarni<br>Qualification: M.Tech Structural Engineering<br>Guide Contact Details:<br>Email ID: koolsudarshan1008@gmail.com<br>Mobile No.: 9980217036</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>Use of Electric Waste in Construction Industry</td>
+            <td>SHAIKH RAJAK SHAFI, SHAIKH NIZAMODDIN ISMAIL, SHAIKH SAJID RAFIQUE, SHAIKH YASIR RAFIQUE</td>
+            <td>Name: Prof. Yogesh D. Nagvekar<br>Qualification: M.Tech CAD Structures<br>Guide Contact Details:<br>Email ID: yogesh.d.nagvekar@gmail.com<br>Mobile No.: 9970054535</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>Analysis of Irrigation System using Smart Technologies</td>
+            <td>PATIL PRASAD SURESH, SHINDE PRAJWAL PRATAPSING, JADHAV AKSHAY RAGHUNATH, KADAM SHUBHAM DATTATRAY</td>
+            <td>Name: Prof. Ashutosh P. Chandgude<br>Qualification: M.E. Construction & Management<br>Guide Contact Details:<br>Email ID: ashutosh.chandgude@dypatilef.com<br>Mobile No.: 8087126033</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>Design of Sustainable Building using Renewable Energy Sources</td>
+            <td>SALVE KIRAN PRABHAKAR, JADHAV MAYUR SANTOSH, THORAT SHUBHAM VISHWASRAO, PATIL SHUBHAM RAMESH</td>
+            <td>Name: Prof. Sandesh S. Patil<br>Qualification: M.E. Building Science & Technology<br>Guide Contact Details:<br>Email ID: hod_civil@dypatilef.com<br>Mobile No.: 9730993086/7588519787</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>Structural Health Monitoring using IoT</td>
+            <td>SHAIKH SAIF SAJJAD, PATIL SHIVAM SANTOSH, KOLTE TEJAS SANJAY, PATIL PRATHAMESH VITTHAL</td>
+            <td>Name: Prof. Sudharshan K. Kulkarni<br>Qualification: M.Tech Structural Engineering<br>Guide Contact Details:<br>Email ID: koolsudarshan1008@gmail.com<br>Mobile No.: 9980217036</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>Development of Smart City Infrastructure using GIS</td>
+            <td>PANDE ANIKET PRABHAKAR, SINGH MAYANK SURYAKANT, KUMBHAR SHUBHAM DATTATRAY, PATIL AKASH SUNIL</td>
+            <td>Name: Prof. Pooja Kirange<br>Qualification: M.E. Construction Technology & Management<br>Guide Contact Details:<br>Email ID: poojakirange.pk@gmail.com<br>Mobile No.: 7768852540</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>Analysis of Green Building Concept in Residential Areas</td>
+            <td>DESHMUKH RAHUL BHARAT, PAWAR ROHAN AJIT, RAUT ROHIT KISAN, GORE SHUBHAM SANJAY</td>
+            <td>Name: Prof. Vishal S. Chougule<br>Qualification: M.Tech Structural Engineering<br>Guide Contact Details:<br>Email ID: vishalchaugule13@gmail.com<br>Mobile No.: 7972538634</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>Study on Soil Stabilization using Industrial Waste</td>
+            <td>PATIL RAHUL SHIVAJI, JADHAV VAIBHAV BHAGWAN, GHARAT AJAY DNYANOBA, KANADE PRAJWAL TUKARAM</td>
+            <td>Name: Prof. Yogesh D. Nagvekar<br>Qualification: M.Tech CAD Structures<br>Guide Contact Details:<br>Email ID: yogesh.d.nagvekar@gmail.com<br>Mobile No.: 9970054535</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>Use of Recycled Plastic in Road Construction</td>
+            <td>PATIL AMIT RAJENDRA, KAMBLE RAHUL NARAYAN, KOLHE SUNIL DNYANESHWAR, SABLE PRATIK DATTATRAY</td>
+            <td>Name: Prof. Sandesh S. Patil<br>Qualification: M.E. Building Science & Technology<br>Guide Contact Details:<br>Email ID: hod_civil@dypatilef.com<br>Mobile No.: 9730993086/7588519787</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>Comparative Study of Traditional and Modern Construction Techniques</td>
+            <td>SHEWALE SHUBHAM MAHADEV, DESHMUKH SHUBHAM BABASAHEB, JADHAV ROHAN RAJENDRA, PATIL RAKESH JITENDRA</td>
+            <td>Name: Prof. Sudharshan K. Kulkarni<br>Qualification: M.Tech Structural Engineering<br>Guide Contact Details:<br>Email ID: koolsudarshan1008@gmail.com<br>Mobile No.: 9980217036</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>Seismic Performance of Structures with Soft Storey</td>
+            <td>SHAIKH SAAD MAHMOOD, PATIL SHUBHAM LAXMAN, DHUMAL PRATIK PRABHAKAR, GAIKWAD SANTOSH SURESH</td>
+            <td>Name: Prof. Vishal S. Chougule<br>Qualification: M.Tech Structural Engineering<br>Guide Contact Details:<br>Email ID: vishalchaugule13@gmail.com<br>Mobile No.: 7972538634</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>Performance Evaluation of Cold Bituminous Mixes</td>
+            <td>KADAM GANESH PANDURANG, GAIKWAD RAHUL RAJU, KOLHE PRASHANT RAJENDRA, LOKHANDE SAGAR VITTHAL</td>
+            <td>Name: Prof. Ashutosh P. Chandgude<br>Qualification: M.E. Construction & Management<br>Guide Contact Details:<br>Email ID: ashutosh.chandgude@dypatilef.com<br>Mobile No.: 8087126033</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>Advanced Waste Water Treatment Techniques</td>
+            <td>SHAIKH NUSRAT SHAHAZAD, PATIL PRAJWAL PRABHAKAR, SALVE RUSHIKESH ANIL, KAMBLE AJAY ANIL</td>
+            <td>Name: Prof. Pooja Kirange<br>Qualification: M.E. Construction Technology & Management<br>Guide Contact Details:<br>Email ID: poojakirange.pk@gmail.com<br>Mobile No.: 7768852540</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        
+    </tbody>
+</table>
+
 
     <!-- Footer Start -->
     

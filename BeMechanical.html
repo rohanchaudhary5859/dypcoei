@@ -459,197 +459,528 @@
     });
     
     </script>
-        
-    
-    <!-- Navbar End -->
+ <style>
+  
+  h1 {
+    text-align: center;
+    color: #00d5ff;
+    margin-bottom: 20px;
+}
 
-    <style>
-        .container {
-            width: 85%;
-            margin: 40px auto;
-            background-color: #fff; /* White background */
-            padding: 25px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
-            border-radius: 10px;
-        }
-    
-        header {
-            text-align: center;
-            background-color: #007BFF; /* Slightly darker blue header background */
-            color: #fff; /* White text */
-            padding: 25px;
-            border-radius: 10px 10px 0 0;
-        }
-    
-        header h1 {
-            margin: 0;
-            font-size: 2.8em;
-            color: white;
-            letter-spacing: 1px; /* Slight spacing for letters */
-            font-weight: 700; /* Bold font */
-        }
-    
-        .intro {
-            padding: 20px;
-            background-color: #f1f3f5; /* Softer light grey background for the intro section */
-            border-radius: 8px;
-            margin-top: 20px;
-            text-align: justify;
-            font-size: 1.2em;
-            line-height: 1.6; /* Increased line height for readability */
-        }
-    
-        .committee-list {
-            margin-top: 35px;
-        }
-    
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-    
-        table th, table td {
-            padding: 18px;
-            text-align: left;
-            border-bottom: 2px solid #dee2e6; /* Thicker border for distinction */
-        }
-    
-        table th {
-            background-color: #007BFF; /* Matching header blue background for table */
-            color: #fff; /* White text */
-            text-transform: uppercase;
-            font-size: 1.1em;
-            letter-spacing: 0.5px; /* Slight spacing for letters */
-        }
-    
-        table tr:hover {
-            background-color: #f8f9fa; /* Highlight row on hover with a softer background */
-            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-        }
-    
-        table tr:last-child td {
-            border-bottom: none;
-        }
-    
-        table td {
-            color: #2f2e2e; /* Slightly lighter text color for table cells */
-        }
-    
-        /* Adjustments for tablets and below */
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
-                margin: 20px auto;
-            }
-    
-            header h1 {
-                font-size: 2.2em;
-            }
-    
-            table th, table td {
-                padding: 12px;
-                font-size: 0.9em; /* Slightly smaller font for table on mobile */
-            }
-        }
-    
-        /* Further adjustments for smaller screens (490px and below) */
-        @media (max-width: 490px) {
-            .container {
-                width: 95%;
-                margin: 15px auto;
-                padding: 15px;
-            }
-    
-            header {
-                padding: 15px;
-            }
-    
-            header h1 {
-                font-size: 1.8em;
-            }
-    
-            .intro {
-                padding: 15px;
-                font-size: 1em;
-            }
-    
-            table th, table td {
-                padding: 10px;
-                font-size: 0.85em; /* Smaller font for table on small screens */
-            }
-    
-            table th {
-                font-size: 1em;
-            }
-        }
-    </style>
-   
-        <div class="container">
-            <header>
-                <h1>Library Advisory Committee</h1>
-            </header>
-            
-            <section class="intro">
-                <p>The College has a Library Advisory Committee consisting of senior faculty members, which is advisory in nature. It meets once every term to decide on the further program and policies of the Library.</p>
-            </section>
-            
-            <section class="committee-list">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Sr. No</th>
-                            <th>Name of the Committee Member</th>
-                            <th>Designation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Dr. Suresh N Mali</td>
-                            <td>Principal</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Mr. Laxmikant Malphedwar</td>
-                            <td>Chairperson</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Ms. Pratiksha Patil</td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Mrs. Anita Shinkar</td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Mr. A.P. Chandgude</td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Mrs. Asmita Mali</td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>Mrs. Ashvini Chavan (Asst. Librarian)</td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>Mr. Ranjeet Shinde (Librarian)</td>
-                            <td>Member Secretary</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </div>
-   
-    
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.project-table th, .project-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.project-table th {
+    background-color: #00d5ff;
+    color: white;
+}
+
+.project-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.project-table tr:hover {
+    background-color: #ddd;
+}
+
+.click-here {
+    color: #f71900;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.click-here:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-table th, .project-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 490px) {
+    .project-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .project-table th, .project-table td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .project-table th, .project-table td {
+        white-space: nowrap;
+    }
+}
+
+</style>
+
+
+<h1>BE Mechanical</h1>
+
+<table class="project-table">
+    <thead>
+        <tr>
+            <th>Project No</th>
+            <th>Project Title</th>
+            <th>Name of the Group Members</th>
+            <th>Guide</th>
+            <th>Details about Project</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>15</td>
+            <td>Design, Fabricate analysis of robotic car with suspension system</td>
+            <td>
+                Madake Ajit Chandrakant<br>
+                Lohar Amol Tanaji<br>
+                Mathpati Aakash Vivekand<br>
+                Ghodke Ashutosh Balaji
+            </td>
+            <td>Prof. R. Y. Daspute</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Design & fabrication of muffler for waste heat recovery by using Thermoelectric Generator</td>
+            <td>
+                Mahesh Sahebrao Vadak<br>
+                Yogesh Balwan Valanj<br>
+                Hitesh Bhalchandra Thakur<br>
+                Shrikant Baliram Posugade
+            </td>
+            <td>Dr. S. B. Ingole</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Design & development of laboratory equipment 'Impact of jet on vanes'</td>
+            <td>
+                Borkar Saurabh Sanjay<br>
+                Aatkare Niranjan Suresh<br>
+                Kodlangare Akshay Shankar<br>
+                Kulkarni Suyog Satyawan
+            </td>
+            <td>Prof. H. B. Parmar</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Design, Analysis And Performance Testing Of Hydraulic Hose Cleaning Machine</td>
+            <td>
+                Sawarkar Shubham Vinod<br>
+                Fegade Akshay Laxman<br>
+                Chavan Sopan Laxmanrao<br>
+                Jadhav Prasad Vijayrao
+            </td>
+            <td>Prof. M. R. Pawar</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Design, Fabrication and analysis of Vortex tube for temperature cooling</td>
+            <td>
+                Navghare Akshay Pandurang<br>
+                Ansari Irfan Majibur Rahman<br>
+                Rane Pranay Kishor<br>
+                Dalvi Pratik Anil
+            </td>
+            <td>Dr. S. B. Ingole</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Design, Assembly And Analysis Of 3D Printing Machine</td>
+            <td>
+                Joshi Shubham Udayrao<br>
+                Tambore Nitesh Shashikant<br>
+                Gorte Ajit Prataprao<br>
+                Narkhede Vaibhav Gajanan
+            </td>
+            <td>Prof. S. S. Chikshe</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Design and Fabrication of Progressive Die for Making Washer</td>
+            <td>
+                Bodhale Akash Sanjay<br>
+                Chaudhari Pavan Narayan<br>
+                Biswapati Mahato<br>
+                Patil Vishal Kamlakar
+            </td>
+            <td>Prof. S. S. Chikshe</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Design and Development of corn reaper machine</td>
+            <td>
+                Kadam Mahesh Bharat<br>
+                Adsul Ketan Ashok<br>
+                Deokate Ajit Suresh<br>
+                Pandhare Prashant Laxman
+            </td>
+            <td>Prof. D. A. Sanap</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Heat Rejection by Heat pipe in CPU</td>
+            <td>
+                Bandgar Ratnakant Kashinath<br>
+                Guja Pravin Ningaraj<br>
+                Malage Dhanaraj Naganath<br>
+                Katkar Akshay Dnyanadev
+            </td>
+            <td>Prof. Siddharth Suman</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Heat exchanger using nano fluid for radiator</td>
+            <td>
+                Aglave Gajanan Sureshrao<br>
+                Gandewar Sumit Santosh<br>
+                More Jagdish Anilrao<br>
+                Gajabhare Yuvraj Venkati
+            </td>
+            <td>Prof. Siddharth Suman</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Coconut tree climbing robot for cutting coconut/ fertilizer spraying</td>
+            <td>
+                Onkar Anil Jagadale<br>
+                Chakor Sujit Arjun<br>
+                Bhosale Raj Netajirao<br>
+                Gade Jagdish Nivratti
+            </td>
+            <td>Prof. M. R. Pawar</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>Heat transfer analysis by multijet air impingement cooling</td>
+            <td>
+                Patil Vijay Pandharinath<br>
+                Pokar Milan Ramesh<br>
+                Salunke Ankush Karbhari<br>
+                Dhumal Shrikrishna Dhanraj
+            </td>
+            <td>Dr. S. B. Ingole</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>Design & Manufacturing of Engine Carbon Cleaning & Welding Spot Removal Machine</td>
+            <td>
+                Patil Krishna Prataprao<br>
+                Amardeep Manikrao Patil<br>
+                Thakre Gaurav Anada<br>
+                Gaikwad Rahul Ashok
+            </td>
+            <td>Prof. R. Y. Daspute</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>Design and Fabrication of automatic Can Crushing Machine</td>
+            <td>
+                Karvate Sanket Prakash<br>
+                Shinde Mayur Prabhakar<br>
+                Pandhare Umesh Lahu<br>
+                Shinde Akshay Yashwant
+            </td>
+            <td>Prof. Vidhyadhar Dixit</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>Design & Fabrication of Garbage cleaning system</td>
+            <td>
+                Ingawale Sarvesh Ashok<br>
+                Dewde Pratik Dayanand<br>
+                Harbak Shubham Kashinath<br>
+                Avhad Rohit Vishnu
+            </td>
+            <td>Prof. S. P. Neharkar</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>Design and development of constant speed variable discharge pump for lathe</td>
+            <td>
+                Shewale Rohit Chintaman<br>
+                Pawar Sanjay Atmaram<br>
+                Shinde Sunil Bramhadas<br>
+                Pedgaonkar Avinash Rangnathrao
+            </td>
+            <td>Prof. M. R. Pawar</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>Design and development of pick and place arrangement by forklift mechanism for library purpose</td>
+            <td>
+                Bhosale Akshay Suresh<br>
+                Kalal Sachin Vankatesh<br>
+                Joshi Nishikant Laxman<br>
+                Supekar Rushikesh Rahul
+            </td>
+            <td>Prof. V. N. Nandedkar</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>Design, Analysis and Performance of Automatic Punching Machine</td>
+            <td>
+                Sonawane Ajay Nathu<br>
+                Deshmukh Pravin Vithal<br>
+                Gaikwad Aditya Subhash<br>
+                Patil Akshay Dhanraj
+            </td>
+            <td>Prof. H. B. Parmar</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>Design, Fabrication and Performance of Semi-Automatic Pipe Bending Machine</td>
+            <td>
+                Dhamal Nikhil Ramesh<br>
+                Pawar Vishal Udhavrao<br>
+                Gaykar Akshay Rajesh<br>
+                Gaikwad Rahul Vishnu
+            </td>
+            <td>Prof. R. Y. Daspute</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>Design and Development of Agricultural Equipment for Multi-Purpose Farming Operations</td>
+            <td>
+                Patil Rahul Janardan<br>
+                Rane Ajinkya Suryakant<br>
+                Gaikwad Pravin Ashok<br>
+                Mahadik Pritam Bharat
+            </td>
+            <td>Prof. S. B. Ingole</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>Design and Fabrication of Water Pump for Agricultural Purpose</td>
+            <td>
+                Gavade Saurabh Hanmantrao<br>
+                Patil Sandeep Shankar<br>
+                Yadav Prathmesh Shamrao<br>
+                Lokhande Pankaj Bhalchandra
+            </td>
+            <td>Prof. H. B. Parmar</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>Design, Fabrication and Testing of Multipurpose Agricultural Tool</td>
+            <td>
+                Raut Ashutosh Vijay<br>
+                Ingawale Suhas Laxman<br>
+                Patil Vikas Santosh<br>
+                Gawade Ajay Hanumant
+            </td>
+            <td>Prof. M. R. Pawar</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>Design, Analysis and Fabrication of Foot Operated Water Pump</td>
+            <td>
+                Mahajan Amit Amol<br>
+                Sawant Omkar Vishwas<br>
+                Bhosale Vijay Rajaram<br>
+                Chavan Harshal Rajendra
+            </td>
+            <td>Prof. D. A. Sanap</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>Design and Fabrication of Power Generation System using Waste Heat Energy</td>
+            <td>
+                Patil Vishal Ashok<br>
+                Chavan Nilesh Suresh<br>
+                Sawant Omkar Prakash<br>
+                Pawar Rahul Janardan
+            </td>
+            <td>Prof. S. S. Chikshe</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>Design and Fabrication of Hydraulic Pipe Bending Machine</td>
+            <td>
+                Gajanan Pravin Patil<br>
+                Kadam Vijay Dnyaneshwar<br>
+                Dhamale Ashish Anandrao<br>
+                Avhad Ganesh Vishwanath
+            </td>
+            <td>Prof. V. N. Nandedkar</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>Design and Fabrication of Pneumatic Sheet Metal Cutting Machine</td>
+            <td>
+                Gawade Ketan Prakash<br>
+                Gade Ajinkya Rajendra<br>
+                Kadam Ramesh Balasaheb<br>
+                Shinde Tushar Tanaji
+            </td>
+            <td>Prof. S. B. Ingole</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>Design and Development of a Sugarcane Juicer Machine</td>
+            <td>
+                Garud Harshal Bhagawan<br>
+                Gunjal Rahul Dattatray<br>
+                Chavan Omkar Sanjay<br>
+                Hande Vaibhav Baban
+            </td>
+            <td>Prof. R. P. Ambare</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td>Design and Manufacturing of Two Stage Evaporative System as a Water Cooler</td>
+            <td>
+                Derle Shubham Ravsaheb<br>
+                Gaikwad Datta Yuvaraj<br>
+                Birajdar Vaibhav Mallinath<br>
+                Jadhav Govind Dattatray
+            </td>
+            <td>Prof. J. R. Varpe</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td>Design and Development of Automatic Bottle Filling Plant</td>
+            <td>
+                Lende Swapnil Ramdas<br>
+                Arote Prashant Rameah<br>
+                Pokharkar Onkar Balasaheb<br>
+                Waykar Ganesh Ramchandra
+            </td>
+            <td>Prof. R. P. Ambare</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td>Enhancement of the Coefficient of Performance of a Refrigerator with Vapor Absorption System</td>
+            <td>
+                Warude Kunal Lilachand<br>
+                Madule Shrikrishna Vijaykumar<br>
+                Repal Vishal Kashinath<br>
+                Kanode Ganesh Wamanrao
+            </td>
+            <td>Prof. M. N. Pohare</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>Ice Plant Test Rig</td>
+            <td>
+                Shaikh Juned Taher<br>
+                Naravate Sunil Balaji<br>
+                Siddiqui Rizwanulla<br>
+                Wadekar Akshay
+            </td>
+            <td>Prof. M. N. Pohare</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td>Experimental Investigation and Enhancement of COP of Vapor Compression Cycle</td>
+            <td>
+                Kapse Shubham Mulchand<br>
+                Jadhav Vishal Pandurang<br>
+                Kendre Bhagvan Sangram<br>
+                Survanshi Sudeep Vishnudas
+            </td>
+            <td>Prof. M. N. Pohare</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td>Design and Development of Steel Ball Mould Grinder for Sand Grinding</td>
+            <td>
+                Patel Rajendra Kumar Bachchulal<br>
+                Aadil Gani Dar<br>
+                Zeeshan Zulfikar Shaikh<br>
+                Junaid Zahid Dadan
+            </td>
+            <td>Prof. H. B. Parmar</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td>Shell and Tube Type Heat Exchanger with Effects of Baffles</td>
+            <td>
+                Deshmukh Shubham Vishwasrao<br>
+                Dukare Ganesh Arjun<br>
+                Borade Kishor Rameshrao<br>
+                More Abhijeet Devidas
+            </td>
+            <td>Prof. J. R. Varpe</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>Design and Fabrication of Loading and Unloading Telescopic Conveyor</td>
+            <td>
+                Pokar Rahul Chandulal<br>
+                Patil Vaibhav Chandrakant<br>
+                Chaudhari Lalit Bandu<br>
+                Singh Satyam Vijayprakash
+            </td>
+            <td>Prof. R. Y. Daspute</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td>Design and Analysis of Wheel Hub of Mahindra TUV</td>
+            <td>
+                Natu Sachin Satyawan<br>
+                Mali Deepak Pandit<br>
+                Marathe Nikhil Vilas<br>
+                Mali Gopal Dayanand
+            </td>
+            <td>Prof. S. P. Neharkar</td>
+            <td><a href="#" class="click-here">Click Here</a></td>
+        </tr>
+
+    </tbody>
+</table>
+
 
     <!-- Footer Start -->
     
