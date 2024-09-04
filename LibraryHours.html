@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DYPCOEI LIBRARY</title>
+    <title>LIBRARY HOURS</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
       <meta content="  " name="keywords">
     <meta content="  " name="description">
 
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -27,7 +27,6 @@
 </head>
 
 <body>
-    <!-- Topbar Start -->
     <div class="fluid-container p-0">
         <nav class="navbar navbar-expand-lg bg-light navbar-bright py-3 py-lg-0 px-lg-5">
             <a href=" index.html" class="navbar-logo ml-lg-3 d-flex align-items-center">
@@ -121,43 +120,55 @@
     .fluid-container {
         width: 100%;
         max-width: 100%;
-        padding: 0 15px; /* Add padding for small screens */
+        padding: 0 15px;
     }
     
     /* Navbar */
     .navbar-bright {
-        background-color: #f8f9fa;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 0.5rem 1rem; /* Adjusted padding */
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 0.5rem 1rem; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Align content to space between */
+    }
+    
+    .navbar-logo {
+       height: auto;
+       padding-top: 5px;
+       padding-bottom: 5px;
+       max-width: 100%;
     }
     
     .navbar-logo img.logo-image {
         height: 80px;
+        margin-left: 10px; /* Adjust the margin as needed */
     }
     
     .navbar-nav {
         display: flex;
         flex-direction: row;
         list-style: none;
-        gap: .70rem; /* Spacing between nav items */
+        gap: 0.75rem;
         align-items: center;
+        margin-left: auto; /* Pushes nav items to the right */
     }
     
     .nav-link {
-        padding: 0.5rem 0.75rem; /* Adjusted padding */
+        padding: 0.5rem 0.75rem;
         color: #333;
         text-decoration: none;
-        font-weight: 200;
-        font-size: 0.8rem; /* Font size */
+        font-weight: 400;
+        font-size: 0.8rem;
         transition: color 0.3s ease, background-color 0.3s ease;
-        border-radius: 0.25rem;
-        line-height: 1.5; /* Ensures vertical alignment */
+        border-radius: 0.75rem;
+        line-height: 1.5;
     }
     
     .nav-link:hover,
     .nav-link.active {
-        color: #0056b3; /* Hover color */
-        background-color: #e3f2fd; /* Hover background */
+        color: #0056b3;
+        background-color: #ffffff;
         text-decoration: none;
     }
     
@@ -168,41 +179,38 @@
     .nav-dropdown .dropdown-toggle {
         display: inline-flex;
         align-items: center;
-        gap: 0.2rem; /* Space between text and arrow */
-        line-height: 1.5;
+        gap: 0.2rem;
+        line-height: 1.1;
     }
     
     .nav-dropdown .dropdown-toggle::after {
-        content: " \25BC"; /* Unicode for a downward arrow */
+        content: " \25BC";
         font-size: 0.8rem;
         transition: transform 0.3s ease-in-out;
-        vertical-align: middle; /* Align arrow vertically */
+        vertical-align: middle;
     }
     
     .nav-dropdown:hover .dropdown-toggle::after {
-        transform: rotate(180deg); /* Arrow rotation on hover */
+        transform: rotate(180deg);
     }
     
-    /* Adjust the styles for the navbar and dropdowns */
     .nav-dropdown:hover .dropdown-menu {
         display: block;
         opacity: 1;
         transform: translateY(0);
     }
     
-    /* Fix submenu positions on large screens */
     .nav-dropdown .dropdown-menu {
         right: auto;
-        left: 0; /* Ensure submenus are aligned correctly */
+        left: 0;
         top: 100%;
         transform: translateY(10px);
     }
     
-    /* Ensure submenus stay within the viewport on large screens */
     .nav-dropdown .dropdown-menu .dropdown-menu {
         top: 0;
         left: 100%;
-        margin-left: 0.1rem;
+        margin-left: 2rem;
         transform: translateY(0);
     }
     
@@ -212,11 +220,11 @@
         top: 90%;
         left: 0;
         z-index: 1000;
-        min-width: 1.5rem;
-        font-size: .80rem;
+        min-width: 6rem;
+        font-size: 0.80rem;
         padding: 0.7rem 0;
         margin: 0.5rem 0 0;
-        font-size: 0.775rem; /* Font size */
+        font-size: 0.75rem;
         color: #000000;
         text-align: left;
         background-color: #fff;
@@ -229,7 +237,7 @@
     }
     
     .dropdown-item {
-        padding: 0.5rem 1rem; /* Adjusted padding */
+        padding: 0.5rem 1rem;
         color: #333;
         text-decoration: none;
         font-weight: 500;
@@ -237,16 +245,16 @@
     }
     
     .dropdown-item:hover {
-        background-color: #ededed;
-        color: #0b7ffb; /* Hover color */
+        background-color: #e3e3e3;
+        color: #0b6bfb;
     }
     
     /* Navbar Toggle (for mobile view) */
     .navbar-toggler {
         border: none;
         padding: 0.80rem 0.75rem;
-        border-radius: 3rem  ;
-        margin-right: 20px;
+        border-radius: 3rem;
+        margin-right: 25px;
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
@@ -363,25 +371,24 @@
     
     @media (max-width: 490px) {
         .navbar-bright {
-            padding: 0.25rem 0.5rem; /* Further reduced padding */
+            padding: 0.25rem 0.5rem;
         }
     
         .nav-link {
-            font-size: 0.95rem; /* Adjust font size */
-            padding: 0.5rem 0.5rem; /* Reduce padding for small screens */
+            font-size: 0.95rem;
+            padding: 0.5rem 0.5rem;
         }
     
         .dropdown-item {
-            padding: 0.5rem 0.75rem; /* Reduced padding for dropdown items */
-            font-size: 0.90rem; /* Smaller font size */
+            padding: 0.5rem 0.75rem;
+            font-size: 0.90rem;
         }
     
         .navbar-nav {
-            gap: 0.50rem; /* Reduce gap between nav items */
+            gap: 0.50rem;
         }
     
         .navbar-toggler-icon {
-            
             width: 16px;
         }
     
@@ -391,13 +398,12 @@
         }
     
         .fluid-container {
-            padding: 10px 10px; /* Further reduce padding */
+            padding: 10px 10px;
         }
     
         .navbar-logo img.logo-image {
-            margin-left: 35px;
-            height: 70px;
-            /* Reduce logo size for small screens */
+            margin-left: 30px; /* Align logo directly with container */
+            height: 80px; /* Reduce logo size for small screens */
         }
     }
     
@@ -460,8 +466,7 @@
     });
     
     </script>
-    <!-- Navbar End -->
-
+        
     <style>
     .container {
     width: 85%;
