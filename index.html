@@ -1376,175 +1376,216 @@ h2 {
         </div>
     </div>
     
-<footer>
-    <div class="footer-container">
-      <div class="footer-column about-us">
-        <h3>About Us</h3>
-        <p>D.Y. Patil College of Engineering & Innovation (DYPCOEI) is committed to providing quality technical education in various engineering disciplines, fostering innovation, and driving excellence in academics.</p>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
+    <footer>
+        <div class="footer-overlay"></div>
+        <div class="footer-container">
+          <div class="footer-column about-us">
+            <h3>About Us</h3>
+            <p>D.Y. Patil College of Engineering & Innovation (DYPCOEI) is committed to providing quality technical education in various engineering disciplines, fostering innovation, and driving excellence in academics.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+      
+          <div class="footer-column quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Academics</a></li>
+              <li><a href="#">Departments</a></li>
+              <li><a href="#">Admission</a></li>
+              <li><a href="#">Placements</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Research & Development</a></li>
+              <li><a href="#">Student Services</a></li>
+              <li><a href="#">Examinations</a></li>
+              <li><a href="#">Library</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column location">
+            <h3>Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.978504471915!2d73.88245741489274!3d18.53327178740332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf0ef26bfeb9%3A0xb6e0f10f23e3f8dd!2sD.%20Y.%20Patil%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1631131484955!5m2!1sen!2sin" width="100%" height="200" frameborder="0" allowfullscreen=""></iframe>
+          </div>
         </div>
-      </div>
-  
-      <div class="footer-column quick-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Academics</a></li>
-          <li><a href="#">Departments</a></li>
-          <li><a href="#">Admission</a></li>
-          <li><a href="#">Placements</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-column quick-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Research & Development</a></li>
-          <li><a href="#">Student Services</a></li>
-          <li><a href="#">Examinations</a></li>
-          <li><a href="#">Library</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-column location">
-        <h3>Location</h3>
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.978504471915!2d73.88245741489274!3d18.53327178740332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf0ef26bfeb9%3A0xb6e0f10f23e3f8dd!2sD.%20Y.%20Patil%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1631131484955!5m2!1sen!2sin"
-          width="100%" height="200" frameborder="0" allowfullscreen=""></iframe>
-      </div>
-    </div>
-  
-    <div class="footer-bottom">
-      <p>&copy; 2024 D.Y. Patil College of Engineering & Innovation. All rights reserved.</p>
-      <p>Design and developed by <a href="#">citymapia</a></p>
-    </div>
-  </footer>
-  
-  <style>
-    footer {
-      background-color: #1b1b1b;
-      color: #f5f5f5;
-      padding: 40px 20px;
-      font-family: 'Roboto', sans-serif;
-    }
-  
+      
+        <div class="footer-bottom">
+          <p>&copy; 2024 D.Y. Patil College of Engineering & Innovation. All rights reserved.</p>
+          <p>Design and developed by <a href="#">citymapia</a></p>
+        </div>
+      </footer>
+      
+      <style>
+        footer {
+          position: relative;
+          background-image: url('DYPCOEI-About-Us-1024x419 (1).jpg');
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed; /* Ensures the background image is fixed when scrolling */
+          color: #f5f5f5;
+          padding: 40px 20px;
+          font-family: 'Roboto', sans-serif;
+        }
+      
+        .footer-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.74); /* Dark overlay for readability */
+          z-index: 1;
+        }
+      
+        .footer-container {
+          position: relative;
+          z-index: 2;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+          gap: 30px;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+      
+        .footer-column {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: flex-start;
+        }
+      
+        .footer-column h3 {
+          color: #d92027;
+          margin-bottom: 15px;
+          font-size: 18px;
+          text-transform: uppercase;
+          border-bottom: 2px solid #d92027;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+      
+        .footer-column p {
+          font-size: 14px;
+          color: #ccc;
+          line-height: 1.6;
+          width: 100%;
+        }
+      
+        .footer-column ul {
+          list-style: none;
+          padding: 0;
+          width: 100%;
+        }
+      
+        .footer-column ul li {
+          margin-bottom: 10px;
+        }
+      
+        .footer-column ul li a {
+          color: #f5f5f5;
+          text-decoration: none;
+          font-size: 14px;
+          display: block;
+          transition: color 0.3s ease;
+        }
+      
+        .footer-column ul li a:hover {
+          color: #d92027;
+        }
+      
+        .social-icons {
+          margin-top: 20px;
+        }
+      
+        .social-icons a {
+          color: #f5f5f5;
+          text-decoration: none;
+          font-size: 18px;
+          margin-right: 15px;
+          transition: color 0.3s ease;
+        }
+      
+        .social-icons a:hover {
+          color: #d92027;
+        }
+      
+        .footer-column.location iframe {
+          border: none;
+          border-radius: 5px;
+        }
+      
+        .footer-bottom {
+          text-align: center;
+          margin-top: 20px;
+          border-top: 1px solid #333;
+          padding-top: 15px;
+          position: relative;
+          z-index: 2;
+        }
+      
+        .footer-bottom p {
+          color: #ccc;
+          font-size: 13px;
+        }
+      
+        .footer-bottom a {
+          color: #d92027;
+          text-decoration: none;
+        }
+      
+        @media (max-width: 768px) {
+          .footer-container {
+            grid-template-columns: 1fr;
+          }
+      
+          .footer-bottom {
+            font-size: 12px;
+          }
+        }
+        @media (max-width: 490px) {
     .footer-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-  
-    /* Footer Column Styling */
-    .footer-column {
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: flex-start;
-    }
-  
-    /* Heading Styling */
-    .footer-column h3 {
-      color: #d92027;
-      margin-bottom: 15px;
-      font-size: 18px;
-      text-transform: uppercase;
-      border-bottom: 2px solid #d92027;
-      padding-bottom: 5px;
-      width: 100%;
-    }
-  
-    /* Paragraph Styling */
-    .footer-column p {
-      font-size: 14px;
-      color: #ccc;
-      line-height: 1.6;
-      width: 100%;
-    }
-  
-    /* List and Link Styling */
-    .footer-column ul {
-      list-style: none;
-      padding: 0;
-      width: 100%;
-    }
-  
-    .footer-column ul li {
-      margin-bottom: 10px;
-    }
-  
-    .footer-column ul li a {
-      color: #f5f5f5;
-      text-decoration: none;
-      font-size: 14px;
-      display: block;
-      transition: color 0.3s ease;
-    }
-  
-    .footer-column ul li a:hover {
-      color: #d92027;
-    }
-  
-    /* Social Icons */
-    .social-icons {
-      margin-top: 20px;
-    }
-  
-    .social-icons a {
-      color: #f5f5f5;
-      text-decoration: none;
-      font-size: 18px;
-      margin-right: 15px;
-      transition: color 0.3s ease;
-    }
-  
-    .social-icons a:hover {
-      color: #d92027;
-    }
-  
-    /* Map Section */
-    .footer-column.location iframe {
-      border: none;
-      border-radius: 5px;
-    }
-  
-    /* Footer Bottom */
-    .footer-bottom {
-      text-align: center;
-      margin-top: 20px;
-      border-top: 1px solid #333;
-      padding-top: 15px;
-    }
-  
-    .footer-bottom p {
-      color: #ccc;
-      font-size: 13px;
-    }
-  
-    .footer-bottom a {
-      color: #d92027;
-      text-decoration: none;
-    }
-  
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .footer-container {
         grid-template-columns: 1fr;
-      }
-  
-      .footer-bottom {
-        font-size: 12px;
-      }
+        padding: 20px 10px;
     }
-  </style>
-  
+
+    .footer-column h3 {
+        font-size: 14px;
+    }
+
+    .footer-column p, .footer-column ul li a {
+        font-size: 12px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+    }
+
+    .social-icons a {
+        font-size: 16px;
+    }
+
+    .footer-bg-image {
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .footer-column.location iframe {
+        width: 100%;
+        height: 150px;
+    }
+}
+      </style>
+      
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
