@@ -138,19 +138,19 @@
     padding: 0.5rem 1rem; 
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Align content to space between */
+    justify-content: space-between;
 }
 
 .navbar-logo {
-   height: auto;
-   padding-top: 5px;
-   padding-bottom: 5px;
-   max-width: 100%;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-width: 100%;
 }
 
 .navbar-logo img.logo-image {
     height: 80px;
-    margin-left: 10px; /* Adjust the margin as needed */
+    margin-left: 10px;
 }
 
 .navbar-nav {
@@ -159,7 +159,7 @@
     list-style: none;
     gap: 0.75rem;
     align-items: center;
-    margin-left: auto; /* Pushes nav items to the right */
+    margin-left: auto;
 }
 
 .nav-link {
@@ -191,16 +191,25 @@
     line-height: 1.1;
 }
 
+/* Simple Arrow Design */
+/* Dropdown Toggle Arrow */
 .nav-dropdown .dropdown-toggle::after {
-    content: " \25BC";
-    font-size: 0.8rem;
+    content: "";
+    display: inline-block;
+    margin-left: 0.5rem;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;  /* Change color to match your design */
     transition: transform 0.3s ease-in-out;
-    vertical-align: middle;
 }
 
 .nav-dropdown:hover .dropdown-toggle::after {
     transform: rotate(180deg);
+    border-top-color: #0056b3;  /* Color on hover */
 }
+
 
 .nav-dropdown:hover .dropdown-menu {
     display: block;
@@ -367,14 +376,6 @@
     .navbar-toggler-icon::after {
         width: 18px;
     }
-
-    .nav-dropdown .dropdown-toggle::after {
-        cursor: pointer;
-    }
-
-    .nav-dropdown .dropdown-toggle:active + .dropdown-menu {
-        display: none;
-    }
 }
 
 @media (max-width: 490px) {
@@ -410,8 +411,8 @@
     }
 
     .navbar-logo img.logo-image {
-        margin-left: 30px; /* Align logo directly with container */
-        height: 80px; /* Reduce logo size for small screens */
+        margin-left: 30px;
+        height: 80px;
     }
 }
 
